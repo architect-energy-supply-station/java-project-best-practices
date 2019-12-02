@@ -46,7 +46,7 @@
         </rollingPolicy>
     </appender>
 
-    <!--输出info文件-->
+    输出info文件
     <appender name="fileInfoLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <!--过滤error日志-->
