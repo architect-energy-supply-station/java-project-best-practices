@@ -1,0 +1,6 @@
+1575269592733|10|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575269592750|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575269592762|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575269592774|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575269592784|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575269593632|1|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|/* ping */ SELECT 1|/* ping */ SELECT 1

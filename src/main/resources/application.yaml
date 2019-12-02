@@ -1,10 +1,7 @@
 mybatis-plus:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.dmsdbj.team3.javaprojectbestpractices.entity
-  global-config:
-    db-config:
-      logic-delete-value: 1
-      logic-not-delete-value: 0
+
 spring:
   datasource:
     druid:
@@ -28,21 +25,3 @@ spring:
       filter:
         wall:
         enabled: true
-  devtools:
-    restart:
-      enabled: true
-      additional-paths: src/main/java
-server:
-  port: 8081
-  servlet:
-    context-path: /spring-demo
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: always
-    shutdown:
-      enabled: true

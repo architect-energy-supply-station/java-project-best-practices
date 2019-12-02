@@ -21,14 +21,4 @@ import java.util.List;
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
 
-	@Autowired
-	UserMapper userMapper;
-
-	@Override
-	public List<User> getUserByLikeName(String queryName) {
-		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
-		queryWrapper.like("name", queryName);
-		List<User> userList = userMapper.selectList(queryWrapper);
-		return userList;
-	}
 }

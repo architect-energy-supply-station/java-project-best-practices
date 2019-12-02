@@ -19,57 +19,23 @@ import java.util.Date;
  * @author sunshine
  * @since 2019-11-01
  */
+@TableName("user")
 @Data
-@EqualsAndHashCode(callSuper = false)
+public class User {
 
-//@Accessors 注解用来配置lombok如何产生和显示getters和setters的方法。
-//chain为一个布尔值，如果为true生成的set方法返回this，为false生成的set方法是void类型。默认为false，除非当fluent为true时，chain默认则为true
-@Accessors(chain = true)
-@TableName(autoResultMap = true)
-public class User implements Serializable {
-
-    private static final long serialVersionUID = 1L;
-
+    /**
+     * 表主键 此处需要设置为数据库ID自增
+     */
     @TableId(type = IdType.AUTO)
     private long id;
-
-    /**
-     * 姓名
-     */
     private String name;
-
-    /**
-     * 年龄
-     */
-    private Integer age;
-
-    /**
-     * 邮箱
-     */
+    private int age;
     private String email;
-
     private String phone;
-
+    /**
+     * 此处故意用了类字段名和数据库列明不相符
+     * 可以用@TableField注解来表示
+     */
     @TableField("userEvaluation")
-    private String userEvaluation;
-
-    @TableLogic
-    private Integer deleted=0;
-
-
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
-    @TableField(fill = FieldFill.INSERT)
-    @Column(name = "create_time")
-    private Date createTime;
-
-
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
-    @Column(name = "update_time")
-    @TableField(fill = FieldFill.INSERT_UPDATE)
-    private Date updateTime;
-
-
-    @TableField(typeHandler = FastjsonTypeHandler.class)
-    private OtherInfo otherInfo;
-
+    private String evaluation;
 }

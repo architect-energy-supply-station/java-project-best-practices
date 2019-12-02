@@ -15,5 +15,4 @@ import java.util.List;
  */
 public interface IUserService extends IService<User> {
 
-	List<User> getUserByLikeName(String queryName);
 }
