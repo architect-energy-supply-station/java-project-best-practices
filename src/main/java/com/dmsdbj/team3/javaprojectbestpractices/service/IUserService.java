@@ -3,8 +3,6 @@ package com.dmsdbj.team3.javaprojectbestpractices.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
 
-import java.util.List;
-
 /**
  * <p>
  *  服务类
