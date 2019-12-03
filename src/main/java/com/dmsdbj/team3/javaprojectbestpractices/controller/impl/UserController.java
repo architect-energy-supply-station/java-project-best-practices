@@ -6,12 +6,10 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.dmsdbj.team3.javaprojectbestpractices.controller.IUserController;
 import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
 import com.dmsdbj.team3.javaprojectbestpractices.service.IUserService;
+import com.dmsdbj.team3.javaprojectbestpractices.utils.exception.ResultBean;
 import com.dmsdbj.team3.javaprojectbestpractices.utils.log.Log;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 /**
  * <p>
@@ -22,48 +20,39 @@ import java.util.List;
  * @since 2019-11-01
  */
 @RestController
-@Slf4j
 public class UserController implements IUserController {
 
 	@Autowired
 	private IUserService userService;
 
 	@Override
-	@Log
-	public User getUser(int id) {
-		log.info("用户输入的ID:[{}]", id);
-		User user = userService.getById(id);
-		return user;
+	@Log(description = "根据Id查询用户")
+	public ResultBean<User> getUser(int id) {
+		return ResultBean.success(userService.getById(id));
 	}
 
 	@Override
-	@Log
-	public IPage getUserList(Page page) {
-		log.info("用户输入的查询:[{}]", page.toString());
+	@Log(description = "查询所有用户")
+	public ResultBean<User> getUserList(Page page) {
 		IPage iPage = userService.page(page);
-		return iPage;
+		return ResultBean.success(iPage);
 	}
 
 	@Override
-	@Log
-	public String removeUser(int id) {
-		log.info("用户输入的ID:[{}]", id);
-		userService.removeById(id);
-		return "success remove userId=" + id;
+	@Log(description = "根据UserId删除一个用户")
+	public ResultBean<Boolean> removeUser(int id) {
+		return ResultBean.success(userService.removeById(id));
 	}
 
 	@Override
-	@Log
-	public String saveUser(User user) {
-		log.info("用户输入的ID:[{}]", user);
-		userService.save(user);
-		return "success insert user =" +user;
+	@Log(description = "新增一个用户")
+	public ResultBean<Boolean> saveUser(User user) {
+		return ResultBean.success(userService.save(user));
 	}
 
 	@Override
-	@Log
-	public List<User> getUserByLikeName(String name) {
-		List<User> userList = userService.getUserByLikeName(name);
-		return userList;
+	@Log(description = "根据姓名模糊查询")
+	public ResultBean<User> getUserByLikeName(String name) {
+		return ResultBean.success(userService.getUserByLikeName(name)) ;
 	}
 }

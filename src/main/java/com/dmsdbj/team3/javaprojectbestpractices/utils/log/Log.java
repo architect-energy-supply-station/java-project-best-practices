@@ -9,9 +9,11 @@ import java.lang.annotation.*;
  */
 
 
+@Target({ElementType.METHOD,ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.METHOD})
 @Documented
 public @interface Log {
-	String name() default "";
+
+	//日志描述信息
+	String description() default "";
 }
