@@ -13,4 +13,5 @@ import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
  */
 public interface UserMapper extends BaseMapper<User> {
 
+	User getUserByPhone(String phone);
 }

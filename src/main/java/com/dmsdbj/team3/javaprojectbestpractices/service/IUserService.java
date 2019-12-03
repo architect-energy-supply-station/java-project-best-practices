@@ -3,6 +3,7 @@ package com.dmsdbj.team3.javaprojectbestpractices.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
 
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
@@ -16,4 +17,8 @@ import java.util.List;
 public interface IUserService extends IService<User> {
 
 	List<User> getUserByLikeName(String queryName);
+
+
+	//根据用户的手机号更新用户信息
+	boolean updateUserByPhone(String oldPhone,String newPhone);
 }

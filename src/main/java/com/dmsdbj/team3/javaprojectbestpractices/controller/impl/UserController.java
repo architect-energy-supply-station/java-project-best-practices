@@ -55,4 +55,10 @@ public class UserController implements IUserController {
 	public ResultBean<User> getUserByLikeName(String name) {
 		return ResultBean.success(userService.getUserByLikeName(name)) ;
 	}
+
+	@Override
+	@Log(description = "根据用户的手机号更新用户信息")
+	public ResultBean<Boolean> updateUserByPhone(String oldPhone,String newPhone) {
+		return ResultBean.success(userService.updateUserByPhone(oldPhone, newPhone)) ;
+	}
 }

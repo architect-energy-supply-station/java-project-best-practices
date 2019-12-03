@@ -35,4 +35,8 @@ public interface IUserController {
 	@ApiOperation(value = "根据姓名模糊查询", notes = "请输入要模糊查询的信息")
 	@GetMapping(value = {"/user/getUserByLikeName/{name}"})
 	ResultBean<User> getUserByLikeName(@ApiParam(value = "name", required = true) @PathVariable String name);
+
+	@ApiOperation(value = "根据用户的手机号更新用户信息", notes = "请输入用户的新旧手机号")
+	@PostMapping("/user/updateUserByPhone/{oldPhone}/{newPhone}")
+	ResultBean<Boolean> updateUserByPhone(@ApiParam(value = "oldPhone", required = true) @PathVariable("oldPhone") String oldPhone,@ApiParam(value = "newPhone", required = true) @PathVariable("newPhone") String newPhone);
 }

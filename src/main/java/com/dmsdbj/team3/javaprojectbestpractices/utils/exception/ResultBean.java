@@ -2,6 +2,7 @@ package com.dmsdbj.team3.javaprojectbestpractices.utils.exception;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -12,6 +13,7 @@ import java.util.Collection;
  * @Date 2019/12/3 14:28
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
+@Data
 public class ResultBean<T> {
 
 	private int code;
@@ -33,30 +35,6 @@ public class ResultBean<T> {
 		this.data = data;
 	}
 
-
-	public int getCode() {
-		return code;
-	}
-
-	public void setCode(int code) {
-		this.code = code;
-	}
-
-	public String getMessage() {
-		return message;
-	}
-
-	public void setMessage(String message) {
-		this.message = message;
-	}
-
-	public Collection<T> getData() {
-		return data;
-	}
-
-	public void setData(Collection<T> data) {
-		this.data = data;
-	}
 
 	public static ResultBean error(int code, String message) {
 		ResultBean resultBean = new ResultBean(code, message);
