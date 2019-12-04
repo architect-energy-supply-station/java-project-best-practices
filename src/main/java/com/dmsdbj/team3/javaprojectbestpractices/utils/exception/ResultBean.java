@@ -1,6 +1,5 @@
 package com.dmsdbj.team3.javaprojectbestpractices.utils.exception;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
@@ -38,13 +37,6 @@ public class ResultBean<T> {
 
 	public static ResultBean error(int code, String message) {
 		ResultBean resultBean = new ResultBean(code, message);
-		return resultBean;
-	}
-
-	public static ResultBean success(IPage iPage) {
-		ResultBean resultBean = new ResultBean();
-		resultBean.setCode(0);
-		resultBean.setMessage("success");
 		return resultBean;
 	}
 

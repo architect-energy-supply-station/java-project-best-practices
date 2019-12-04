@@ -33,7 +33,7 @@ public class UserController implements IUserController {
 
 	@Override
 	@Log(description = "查询所有用户")
-	public ResultBean<User> getUserList(Page page) {
+	public ResultBean<IPage> getUserList(Page page) {
 		IPage iPage = userService.page(page);
 		return ResultBean.success(iPage);
 	}
@@ -58,7 +58,7 @@ public class UserController implements IUserController {
 
 	@Override
 	@Log(description = "根据用户的手机号更新用户信息")
-	public ResultBean<Boolean> updateUserByPhone(String oldPhone,String newPhone) {
+	public ResultBean<Boolean> updateUserByPhone(String oldPhone,String newPhone) throws Exception {
 		return ResultBean.success(userService.updateUserByPhone(oldPhone, newPhone)) ;
 	}
 }

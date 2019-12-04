@@ -20,5 +20,5 @@ public interface IUserService extends IService<User> {
 
 
 	//根据用户的手机号更新用户信息
-	boolean updateUserByPhone(String oldPhone,String newPhone);
+	boolean updateUserByPhone(String oldPhone,String newPhone) throws Exception;
 }

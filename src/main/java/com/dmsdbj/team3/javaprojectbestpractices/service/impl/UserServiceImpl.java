@@ -46,7 +46,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 	 */
 	@Override
 	@Transactional
-	public boolean updateUserByPhone(String oldPhone,String newPhone) {
+	public boolean updateUserByPhone(String oldPhone,String newPhone) throws Exception {
 		boolean debug = log.isDebugEnabled();
 		if(debug){
 			log.debug("用户输入的新旧手机号. args[oldPhone=[{}],newPhone=[{}]]", oldPhone, newPhone);
