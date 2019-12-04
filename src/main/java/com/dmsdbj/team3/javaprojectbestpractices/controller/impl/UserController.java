@@ -8,7 +8,9 @@ import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
 import com.dmsdbj.team3.javaprojectbestpractices.service.IUserService;
 import com.dmsdbj.team3.javaprojectbestpractices.utils.exception.ResultBean;
 import com.dmsdbj.team3.javaprojectbestpractices.utils.log.Log;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -20,7 +22,13 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2019-11-01
  */
 @RestController
+@Slf4j
 public class UserController implements IUserController {
+
+
+	@Value("${MYENGLISHNAME.value}")
+	private String myEnglishName;
+
 
 	@Autowired
 	private IUserService userService;
@@ -60,5 +68,12 @@ public class UserController implements IUserController {
 	@Log(description = "根据用户的手机号更新用户信息")
 	public ResultBean<Boolean> updateUserByPhone(String oldPhone,String newPhone) throws Exception {
 		return ResultBean.success(userService.updateUserByPhone(oldPhone, newPhone)) ;
+	}
+
+	@Override
+	public String getSettingValue() {
+		String englishName=myEnglishName;
+		log.info("我的英文名称是:[{}]",myEnglishName);
+		return englishName;
 	}
 }
