@@ -19,11 +19,13 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @Email 18232466045@163.com
  * @Contract https://github.com/ITManito
  */
+//通过@Configuration注解，让Spring来加载该类配置
 @Configuration
 @EnableSwagger2
 public class Swagger2Config {
     @Bean
     public Docket createRestApi() {
+//        Docket的bean定义了Swagger的版本、需要暴露的API等信息
         return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).select()
                 .apis(RequestHandlerSelectors.basePackage("com.dmsdbj.team3.javaprojectbestpractices.controller")).paths(PathSelectors.any()).build();
     }

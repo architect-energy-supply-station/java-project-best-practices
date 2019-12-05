@@ -25,3 +25,8 @@ spring:
       filter:
         wall:
         enabled: true
+server:
+  port: 8098
+# 加上以下servlet内容，访问地址为 http://localhost:8098/spring-demo/swagger-ui.html，否则为 http://localhost:8098/swagger-ui.html，否则为
+  servlet:
+    context-path: /spring-demo

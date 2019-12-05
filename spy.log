@@ -4,3 +4,90 @@
 1575269592774|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1575269592784|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1575269593632|1|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|/* ping */ SELECT 1|/* ping */ SELECT 1
+1575446661845|9|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575446661864|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575446661876|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575446661889|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575446661905|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447177115|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447177129|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447177142|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447177154|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447177165|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447347686|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447347701|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447347712|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447347724|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447347734|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447468124|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447468139|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447468150|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447468162|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447468172|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447559486|7|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447559502|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447559516|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447559529|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447559541|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447649917|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447649937|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447649952|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447649964|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575447649977|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575448896617|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575448896640|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575448982560|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575448982561|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575448994036|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575448997203|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449000439|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449001004|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449001387|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449001676|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449001895|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449002125|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449002405|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449002607|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449002856|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449003091|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449003587|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449003905|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449004394|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449004875|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449005605|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449283517|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575449283518|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575449303700|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575449400489|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575449400504|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575449400516|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575449400527|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575449400538|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575449437648|1|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575451204745|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575451204759|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575451204770|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575451204781|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575451204792|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575451247899|1|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575452190939|15|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575452190955|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575452190966|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575452190977|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575452190988|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575452279469|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575452279486|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575465753584|15|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575465753599|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575465753611|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575465753623|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575465753633|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575505834000|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575505834014|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575505834025|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575505834037|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575505834047|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575506116810|3|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575506116850|1|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575507348207|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575507348209|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
