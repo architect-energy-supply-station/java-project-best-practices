@@ -6,9 +6,9 @@ spring:
   datasource:
     druid:
       driver-class-name: com.p6spy.engine.spy.P6SpyDriver
-      url: jdbc:p6spy:mysql://localhost:3306/test
+      url: jdbc:p6spy:mysql://192.168.255.129:3306/SpringBoot
       username: root
-      password: 12345678
+      password: root
       db-type: com.alibaba.druid.pool.DruidDataSource
       min-idle: 5
       initial-size: 5

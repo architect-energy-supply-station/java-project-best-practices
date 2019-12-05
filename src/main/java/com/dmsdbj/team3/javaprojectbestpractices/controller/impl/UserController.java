@@ -1,5 +1,4 @@
 package com.dmsdbj.team3.javaprojectbestpractices.controller.impl;
-import	java.util.regex.Pattern;
 
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -8,7 +7,6 @@ import com.dmsdbj.team3.javaprojectbestpractices.Aop.Log;
 import com.dmsdbj.team3.javaprojectbestpractices.controller.IUserController;
 import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
 import com.dmsdbj.team3.javaprojectbestpractices.service.IUserService;
-import com.dmsdbj.team3.javaprojectbestpractices.utils.ResultBean;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -29,36 +27,36 @@ public class UserController implements IUserController {
 
     @Override
     @Log(description = "保存用户")
-    public ResultBean saveUser(User userEntity) {
+    public String saveUser(User userEntity) {
         userService.save(userEntity);
-        return ResultBean.success("success insert user = " + JSON.toJSONString(userEntity));
+        return "success insert user = " + JSON.toJSONString(userEntity);
     }
 
     @Override
     @Log(description = "根据姓名查询用户")
-    public ResultBean<List<User>> getUserByLikeName(String name) {
+    public List<User> getUserByLikeName(String name) {
         return null;
     }
 
     @Override
     @Log(description = "删除用户")
-    public ResultBean removeUser(int id) {
+    public String removeUser(int id) {
         userService.removeById(id);
-        return ResultBean.success("success delete userId = " + id);
+        return "success delete userId = " + id;
     }
 
     @Override
     @Log(description = "根据id获取用户")
-    public ResultBean<User> getUser(int id) {
+    public User getUser(int id) {
         User userEntity = userService.getById(id);
-        return ResultBean.success(userEntity);
+        return userEntity;
     }
 
     @Override
     @Log(description = "分页查询用户")
-    public ResultBean<IPage> getUserList(Page page) {
+    public IPage getUserList(Page page) {
         page.setDesc("name");
         IPage iPage = userService.page(page);
-        return ResultBean.success(iPage);
+        return iPage;
     }
 }
