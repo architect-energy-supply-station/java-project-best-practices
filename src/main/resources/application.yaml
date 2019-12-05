@@ -8,7 +8,7 @@ spring:
       driver-class-name: com.p6spy.engine.spy.P6SpyDriver
       url: jdbc:p6spy:mysql://localhost:3306/test
       username: root
-      password: 12345678
+      password: bill6688
       db-type: com.alibaba.druid.pool.DruidDataSource
       min-idle: 5
       initial-size: 5
