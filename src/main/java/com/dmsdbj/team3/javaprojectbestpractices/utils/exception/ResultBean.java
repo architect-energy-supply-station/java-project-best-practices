@@ -36,7 +36,9 @@ public class ResultBean<T> {
 
 
 	public static ResultBean error(int code, String message) {
-		ResultBean resultBean = new ResultBean(code, message);
+		ResultBean resultBean = new ResultBean();
+		resultBean.setCode(code);
+		resultBean.setMessage(message);
 		return resultBean;
 	}
 
@@ -45,7 +47,7 @@ public class ResultBean<T> {
 		ResultBean resultBean = new ResultBean();
 		resultBean.setMessage("success");
 		resultBean.setData(data);
-		resultBean.setCode(0);
+		resultBean.setCode(0000);
 		return resultBean;
 	}
 
@@ -55,7 +57,7 @@ public class ResultBean<T> {
 		temp.add(data);
 		resultBean.setMessage("success");
 		resultBean.setData(temp);
-		resultBean.setCode(0);
+		resultBean.setCode(0000);
 		return resultBean;
 	}
 
