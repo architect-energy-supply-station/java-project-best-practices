@@ -6,7 +6,7 @@ spring:
   datasource:
     druid:
       driver-class-name: com.p6spy.engine.spy.P6SpyDriver
-      url: jdbc:p6spy:mysql://localhost:3306/test
+      url: jdbc:p6spy:mysql://192.168.72.133:3306/best-practice
       username: root
       password: bill6688
       db-type: com.alibaba.druid.pool.DruidDataSource
@@ -25,3 +25,15 @@ spring:
       filter:
         wall:
         enabled: true
+
+  application:
+    name: springboot_prometheus
+
+management:
+  metrics:
+    tags:
+      application: ${spring.application.name}
+  endpoints:
+    web:
+      exposure:
+        include: '*'
