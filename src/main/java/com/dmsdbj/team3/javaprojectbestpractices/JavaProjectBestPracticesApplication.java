@@ -9,5 +9,4 @@ public class JavaProjectBestPracticesApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(JavaProjectBestPracticesApplication.class, args);
 	}
-
 }
