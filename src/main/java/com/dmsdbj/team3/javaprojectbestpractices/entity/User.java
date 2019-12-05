@@ -1,15 +1,8 @@
 package com.dmsdbj.team3.javaprojectbestpractices.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
-import com.baomidou.mybatisplus.extension.handlers.FastjsonTypeHandler;
-import com.fasterxml.jackson.annotation.JsonFormat;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.experimental.Accessors;
-
-import javax.persistence.Column;
-import java.io.Serializable;
-import java.util.Date;
 
 /**
  * <p>
@@ -27,8 +20,11 @@ public class User {
      * 表主键 此处需要设置为数据库ID自增
      */
     @TableId(type = IdType.AUTO)
+    @ApiModelProperty(value="主键id",example = "1")
     private long id;
     private String name;
+
+    @ApiModelProperty(value="年龄",example = "22")
     private int age;
     private String email;
     private String phone;

@@ -1,14 +1,11 @@
 package com.dmsdbj.team3.javaprojectbestpractices.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
 import com.dmsdbj.team3.javaprojectbestpractices.mapper.UserMapper;
 import com.dmsdbj.team3.javaprojectbestpractices.service.IUserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 
 /**
  * <p>

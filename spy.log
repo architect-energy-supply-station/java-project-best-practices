@@ -4,3 +4,399 @@
 1575269592774|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1575269592784|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1575269593632|1|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|/* ping */ SELECT 1|/* ping */ SELECT 1
+1575274477383|8|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575274477393|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575274477400|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575274477406|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575274477416|1|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575276553482|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575276553489|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575276553493|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575276553497|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575276553502|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575279239469|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575279239476|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575279239481|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575279239486|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575279239490|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575333784602|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575333784608|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575333784612|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575333784616|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575333784621|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575334118305|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575334118311|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575334118316|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575334118320|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575334118324|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575334571790|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575334571797|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575334571801|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575334571805|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575334571810|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575336032093|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575336032100|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575336032104|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575336032109|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575336032112|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575336205775|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575336205781|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575336205785|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575336205789|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575336205793|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575337310149|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575337310156|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575337310160|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575337310164|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575337310168|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575337424226|7|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575337424234|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575337424239|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575337424244|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575337424248|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575337457741|7|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575337457749|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575337457754|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575337457759|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575337457763|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575338250614|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575338250622|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575338250626|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575338250630|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575338250635|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575338324689|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575338324696|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575338324700|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575338324704|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575338324707|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575339263336|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575339263386|3|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575339263394|1|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575356211276|7|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575356211283|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575356211289|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575356211293|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575356211297|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575357118642|7|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575357118649|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575357118654|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575357118659|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575357118662|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575358397613|7|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575358397622|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575358397626|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575358397630|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575358397634|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575359393971|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575359393977|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575359393981|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575359393985|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575359393989|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575359660505|15|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575359660513|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575359660516|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575359660521|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575359660526|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575359682706|0|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575359682713|0|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575359913176|171|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575359913461|14|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575359913697|14|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575359913922|14|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575359914151|14|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575360108718|15|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575360109906|15|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575360110236|26|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575360146446|14|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575360146577|26|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575360155749|14|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575360155883|25|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575360160718|14|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575360160892|31|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575360161601|14|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575360161731|25|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575360321579|7|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575360321586|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575360321591|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575360321594|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575360321597|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575360395807|7|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575360395816|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575360395820|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575360395825|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575360395830|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575360468404|10|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575360469289|8|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575360469522|15|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575360554059|9|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575360554150|8|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575360554220|15|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575361357717|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575361357719|0|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575361357722|1|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575361359082|0|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575361359084|1|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575361359980|0|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575361359982|0|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575361377289|0|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575361377291|0|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575361377497|0|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575361377499|1|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575361378134|0|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575361378135|0|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575361378323|0|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575361378325|0|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575361378503|0|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575361378505|0|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575361378678|15|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575361378681|0|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575361378867|0|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575361378869|0|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575361379067|0|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575361379069|1|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575361532636|7|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575361532643|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575361532647|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575361532652|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575361532656|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575361843780|13|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575361844676|11|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575361844930|20|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575361870605|11|statement|connection 4|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575361870687|20|statement|connection 4|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575363616454|7|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575363616460|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575363616465|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575363616468|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575363616472|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575419590706|13|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575419590718|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575419590732|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575419590744|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575419590756|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575422784462|14|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575422784467|3|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575422784470|2|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575422784473|2|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575422784477|2|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575422784482|4|statement|connection 5|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575422784583|2|statement|connection 5|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575422784606|2|statement|connection 5|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575423139811|21|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423139832|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423139847|1|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423139860|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423139873|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423440756|9|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423440765|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423440771|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423440777|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423440784|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423751031|9|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423751041|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423751049|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423751055|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423751061|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423884276|10|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423884285|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423884290|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423884297|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423884303|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423916945|11|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423916956|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423916962|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423916970|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575423916976|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425109251|8|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425109267|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425109273|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425109279|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425109285|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425258823|8|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425258883|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425258894|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425258911|7|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425258924|1|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425411047|8|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425411064|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425411072|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425411079|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425411085|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425468844|8|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425468866|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425468878|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425468893|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575425468904|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575426969105|9|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575426969113|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575426969176|1|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575426969193|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575426969212|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428147527|10|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428147589|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428147599|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428147615|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428147623|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428220873|9|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428220882|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428220888|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428220902|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428220909|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428232657|10|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575428324311|8|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428324326|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428324332|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428324338|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428324344|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428339007|12|statement|connection 4|DELETE FROM user WHERE id=?|DELETE FROM user WHERE id=2
+1575428339018|10|commit|connection 4||
+1575428405616|7|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428405628|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428405635|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428405641|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428405649|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428423119|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575428479162|9|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428479223|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428479232|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428479242|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575428479263|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575429605215|4|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575429605216|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575429605217|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575429605217|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575429605218|0|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575429605268|0|statement|connection 5|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575429605286|1|statement|connection 5|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575429657559|7|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575429657577|1|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575429657584|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575429657590|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575429657596|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575429666137|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575429695124|17|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430016873|8|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430016882|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430016890|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430016900|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430016907|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430048063|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430049439|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430050082|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430050249|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430050445|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430050609|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430050829|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430051003|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430051188|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430051376|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430051529|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430051739|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430051939|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430052148|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430052707|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430052884|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430053072|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430053272|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430053457|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430370378|9|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430370388|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430370394|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430370400|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430370407|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430376807|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=2
+1575430442054|1|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430442055|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=2
+1575430443103|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=2
+1575430535183|16|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430535201|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430535213|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430535223|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430535236|1|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430554253|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430595265|9|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430595277|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430595285|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430595292|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430595300|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430932402|1|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575430932436|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430936335|3|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430937812|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430939462|2|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430941450|2|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575430942336|2|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575431032722|1|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431032726|2|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=2
+1575431047903|2|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575431177547|16|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431177565|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431177589|1|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431177606|1|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431177623|1|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431194752|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575431240475|20|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431240493|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431240504|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431240516|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431240526|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431252370|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575431274351|12|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575431484905|11|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431484915|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431484922|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431484929|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431484937|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431495496|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575431649516|14|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431649533|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431649550|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431649562|1|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431649573|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431670620|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575431715158|11|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431715169|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431715176|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431715182|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431715189|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575431722466|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575444832967|7|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575444832974|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575444832979|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575444832984|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575444832988|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575444879854|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575445064594|7|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575445064629|7|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=2
+1575445154794|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575445154796|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575445156346|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575445157123|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575445164190|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575445165006|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575445181695|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575445182536|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575445183176|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575445183361|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575445228306|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575445228306|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575445228306|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575445242453|1|statement|connection 2|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575445242453|1|statement|connection 3|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575445257724|6|statement|connection 3|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575445841112|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575445841114|0|statement|connection 3|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575445842416|0|statement|connection 3|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575445843234|0|statement|connection 3|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575445844008|0|statement|connection 3|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575445844230|0|statement|connection 3|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575445844449|0|statement|connection 3|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575445844889|0|statement|connection 3|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575445845896|0|statement|connection 3|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575445877220|6|statement|connection 3|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575450005708|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575450005715|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575450005720|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575450005724|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575450005729|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575450020706|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
