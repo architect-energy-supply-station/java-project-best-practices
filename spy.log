@@ -400,3 +400,15 @@
 1575450005724|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1575450005729|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1575450020706|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575530587650|13|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575530587666|1|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575530587676|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575530587687|1|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575530587697|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575533574159|16|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575533574175|1|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575533574185|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575533574194|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575533574203|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575533766144|1|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575533766189|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
