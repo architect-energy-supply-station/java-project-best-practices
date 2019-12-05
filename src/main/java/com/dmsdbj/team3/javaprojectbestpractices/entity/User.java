@@ -21,7 +21,7 @@ public class User {
     /**
      * 表主键 此处需要设置为数据库ID自增
      */
-    @TableId(type = IdType.AUTO)
+    //@TableId(type = IdType.AUTO)
     private long id;
     private String name;
     private int age;
