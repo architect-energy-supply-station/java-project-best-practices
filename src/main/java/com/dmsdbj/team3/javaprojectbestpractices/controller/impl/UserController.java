@@ -29,8 +29,12 @@ public class UserController implements IUserController {
     @Override
     @Log(description = "保存用户")
     public ResultBean<String> saveUser(User userEntity) {
-        userService.save(userEntity);
-        return ResultBean.success("success insert user = " + JSON.toJSONString(userEntity));
+        boolean saveFlag = userService.save(userEntity);
+        if (saveFlag) {
+            return ResultBean.success("success insert user = " + JSON.toJSONString(userEntity));
+        } else {
+            return ResultBean.error(111, "保存用户失败");
+        }
     }
 
     @Override
@@ -43,14 +47,22 @@ public class UserController implements IUserController {
     @Log(description = "删除用户")
     public ResultBean<String> removeUser(int id) {
         userService.removeById(id);
-        return ResultBean.success("success delete userId = " + id);
+        if (userService.removeById(id)) {
+            return ResultBean.success("success delete userId = " + id);
+        } else {
+            return ResultBean.error(111,"failed delete userId = " + id);
+        }
     }
 
     @Override
     @Log(description = "根据id获取用户")
     public ResultBean<User> getUser(int id) {
         User userEntity = userService.getById(id);
-        return ResultBean.success(userEntity);
+        if (userEntity != null) {
+            return ResultBean.success(userEntity);
+        } else {
+            return ResultBean.error(111, "根据id"+id+"查询用户失败");
+        }
     }
 
     @Override
@@ -58,6 +70,11 @@ public class UserController implements IUserController {
     public ResultBean<IPage> getUserList(Page page) {
         page.setDesc("name");
         IPage iPage = userService.page(page);
-        return ResultBean.success(iPage);
+        if (iPage != null) {
+            return ResultBean.success(iPage);
+        } else {
+            return ResultBean.error(111, "分页查询用户失败");
+        }
     }
 }
+
