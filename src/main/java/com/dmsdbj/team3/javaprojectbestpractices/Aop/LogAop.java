@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.slf4j.MDC;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -22,6 +23,7 @@ import javax.servlet.http.HttpServletRequest;
 public class LogAop {
     ThreadLocal<Long> time=new ThreadLocal<Long> ();
     ThreadLocal<String> tag=new ThreadLocal<String> ();
+    private static String TRACE_ID = "TRACE_ID";
 
     //定义切入点
     @Pointcut("@annotation(com.dmsdbj.team3.javaprojectbestpractices.Aop.Log)")
@@ -63,12 +65,14 @@ public class LogAop {
     @Around("log()")
     public Object arroudExec(ProceedingJoinPoint pjp) throws Throwable {
         long startTime=System.currentTimeMillis();
+        MDC.put(TRACE_ID,IdWorker.getIdStr());
         Object result = pjp.proceed();
 
         //打印出参
         log.info("Response Args :{}", JSON.toJSON(result));
         // 执行耗时
         log.info("Time consuming: {}ms" , System.currentTimeMillis()-startTime);
+        MDC.remove(TRACE_ID);
         return result;
     }
 

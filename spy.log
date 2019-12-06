@@ -412,3 +412,63 @@
 1575533574203|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1575533766144|1|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1575533766189|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575594999887|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575594999893|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575594999897|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575594999900|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575594999903|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575599483681|1|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575599483743|3|statement|connection 4|INSERT INTO user  ( name, age, email, phone, userEvaluation )  VALUES  ( ?, ?, ?, ?, ? )|INSERT INTO user  ( name, age, email, phone, userEvaluation )  VALUES  ( 'string', 22, 'string', 'string', 'string' )
+1575599483749|1|commit|connection 4||
+1575614727217|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575614727224|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575614727228|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575614727232|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575614727236|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575614867920|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575614867926|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575614867930|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575614867934|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575614867939|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575614995468|7|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575614995474|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575614995479|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575614995484|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575614995489|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615070799|7|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615070805|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615070808|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615070813|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615070816|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615097636|10|statement|connection 4|select * from User where phone=?|select * from User where phone='158'
+1575615140785|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615140791|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615140795|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615140798|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615140801|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615147330|1|statement|connection 4|select * from user where phone=?|select * from user where phone='158'
+1575615151766|0|statement|connection 4|select * from user where phone=?|select * from user where phone='158'
+1575615151964|1|statement|connection 4|select * from user where phone=?|select * from user where phone='158'
+1575615397832|6|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615397838|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615397844|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615397853|1|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615397858|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615418927|1|statement|connection 4|select * from user where phone=?|select * from user where phone='158'
+1575615418998|2|statement|connection 4|UPDATE user  SET name=?, age=?, email=?, phone=?  WHERE id=?|UPDATE user  SET name='lina ', age=20, email='158', phone='168'  WHERE id=1
+1575615419000|0|statement|connection 4|UPDATE user  SET name=?, age=?, email=?, phone=?  WHERE id=?|UPDATE user  SET name='lina', age=22, email='158', phone='168'  WHERE id=3
+1575615419002|0|statement|connection 4|UPDATE user  SET name=?, age=?, email=?, phone=?  WHERE id=?|UPDATE user  SET name='lina', age=22, email='158', phone='168'  WHERE id=4
+1575615419004|1|commit|connection 4||
+1575616575748|7|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616575755|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616575760|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616575765|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616575769|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616602001|0|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=3
+1575616745563|10|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616745573|0|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616745579|0|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616745585|0|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616745590|0|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616758326|1|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4
+1575616798396|11|statement|connection 4|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=4

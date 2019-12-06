@@ -76,5 +76,15 @@ public class UserController implements IUserController {
             return ResultBean.error(111, "分页查询用户失败");
         }
     }
+
+    @Override
+    public ResultBean updateUserByPhone(String oldPhone, String newPhone) {
+        boolean updateFlag = userService.updateUserByPhone(oldPhone, newPhone);
+        if (updateFlag) {
+            return ResultBean.success(updateFlag);
+        } else {
+            return ResultBean.error(111,"更新用户手机号失败");
+        }
+    }
 }
 

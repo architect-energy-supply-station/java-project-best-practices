@@ -1,4 +1,5 @@
 package com.dmsdbj.team3.javaprojectbestpractices.controller;
+import	java.lang.annotation.Annotation;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -37,4 +38,8 @@ public interface IUserController {
     @ApiOperation(value = "根据姓名模糊查询", notes = "请输入要模糊查询的信息")
     @GetMapping(value = {"/user/getUserByLikeName/{name}"})
     ResultBean<List<User>> getUserByLikeName(@ApiParam(value = "name", required = true,defaultValue ="xiaoli") @PathVariable String name);
+
+    @ApiOperation(value = "更新用户手机号")
+    @PostMapping("/user/updateUserByPhone/{oldPhone}/{newPhone}")
+    ResultBean updateUserByPhone(@PathVariable String oldPhone, @PathVariable String newPhone);
 }
