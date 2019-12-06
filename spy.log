@@ -177,3 +177,10 @@
 1575534376930|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1575534381109|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
 1575534381115|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,10
+1575590493737|7|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575590493755|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575590493768|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575590493781|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575590493793|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575590503080|2|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575590503086|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,10
