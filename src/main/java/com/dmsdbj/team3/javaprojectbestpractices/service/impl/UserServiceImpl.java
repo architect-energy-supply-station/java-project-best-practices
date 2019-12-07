@@ -46,7 +46,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
                 }
             }
         }catch (Exception e) {
-            log.info("用户更新手机号失败，phnone=[{}]" , oldPhone);
+            log.info("用户更新手机号失败，phnone=[{}]" , oldPhone,e);
         }
         return true;
     }
