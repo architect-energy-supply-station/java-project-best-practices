@@ -8,7 +8,7 @@ spring:
 server:
   port: 8081
   servlet:
-    context-path: /spring-demo
+    context-path: /spring-best-practices
 management:
   endpoints:
     web:
@@ -64,13 +64,26 @@ mybatis-plus:
 MYENGLISHNAME:
   value: sunshine
 
+swagger:
+  title: Best Practices-Dev
+  contact:
+    name: sunshine
+    email: 18333640045@163.com
+    url:
+  version: 1.0.1
+  description: SSM project best practices
+  base-package: com.dmsdbj.team3.javaprojectbestpractices.controller
+  base-path: /**
+  license: "许可证"
+  license-url: ""
+
 ---
 
 
 server:
   port: 8082
   servlet:
-    context-path: /spring-best-pratice
+    context-path: /spring-best-practices
 spring:
   profiles: test
   application:
@@ -103,6 +116,19 @@ mybatis-plus:
       logic-delete-value: 1
       logic-not-delete-value: 0
 
+swagger:
+  title: Best Practices-Test
+  contact:
+    name: sunshine
+    email: 18333640045@163.com
+    url:
+  version: 1.0.1
+  description: SSM project best practices
+  base-package: com.dmsdbj.team3.javaprojectbestpractices.controller
+  base-path: /**
+  license: "许可证"
+  license-url: ""
+
 
 ---
 
@@ -110,7 +136,7 @@ mybatis-plus:
 server:
   port: 8083
   servlet:
-    context-path: /spring-best-pratice
+    context-path: /spring-best-practices
 spring:
   profiles: prod
   application:
@@ -144,3 +170,16 @@ mybatis-plus:
       logic-delete-value: 1
       logic-not-delete-value: 0
 
+
+swagger:
+  title: Best Practices-Prod
+  contact:
+    name: sunshine
+    email: 18333640045@163.com
+    url:
+  version: 1.0.1
+  description: SSM project best practices
+  base-package: com.dmsdbj.team3.javaprojectbestpractices.controller
+  base-path: /**
+  license: "许可证"
+  license-url: ""

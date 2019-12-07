@@ -89,3 +89,8 @@
 1575461951087|0|statement|connection 12|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1575461951099|0|statement|connection 13|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1575461951110|0|statement|connection 14|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575636615489|0|statement|connection 10|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1|SELECT 1
+1575636615504|0|statement|connection 11|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1|SELECT 1
+1575636615517|0|statement|connection 12|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1|SELECT 1
+1575636615530|0|statement|connection 13|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1|SELECT 1
+1575636615546|1|statement|connection 14|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1|SELECT 1

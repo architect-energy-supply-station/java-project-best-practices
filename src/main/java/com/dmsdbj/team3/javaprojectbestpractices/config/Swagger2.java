@@ -15,24 +15,24 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @Auther sunshinezhang
  * @Date 2019/10/30 19:48
  */
-@Configuration
-@EnableSwagger2
-public class Swagger2 {
-	@Bean
-	public Docket createRestApi() {
-		return new Docket(DocumentationType.SWAGGER_2)
-				.apiInfo(apiInfo())
-				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.dmsdbj.team3.javaprojectbestpractices.controller"))
-				.paths(PathSelectors.any())
-				.build();
-	}
-
-	private ApiInfo apiInfo() {
-		return new ApiInfoBuilder()
-				.title("springboot利用swagger构建api文档")
-				.version("1.0")
-				.build();
-	}
-
-}
+//@Configuration
+//@EnableSwagger2
+//public class Swagger2 {
+//	@Bean
+//	public Docket createRestApi() {
+//		return new Docket(DocumentationType.SWAGGER_2)
+//				.apiInfo(apiInfo())
+//				.select()
+//				.apis(RequestHandlerSelectors.basePackage("com.dmsdbj.team3.javaprojectbestpractices.controller"))
+//				.paths(PathSelectors.any())
+//				.build();
+//	}
+//
+//	private ApiInfo apiInfo() {
+//		return new ApiInfoBuilder()
+//				.title("springboot利用swagger构建api文档")
+//				.version("1.0")
+//				.build();
+//	}
+//
+//}
