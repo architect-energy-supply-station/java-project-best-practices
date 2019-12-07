@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.*;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NonNull;
 import lombok.experimental.Accessors;
 import org.hibernate.validator.constraints.Length;
 
@@ -16,7 +17,8 @@ import javax.validation.constraints.Pattern;
  * <p>
  * 
  * </p>
- *
+ * @Data 注解相当于@Getter @Setter @RequiredArgsConstructor @ToString @EqualsAndHashCode
+ * @EqualsAndHashCode 会生成equals 和 hashcode方法
  * @author sunshine
  * @since 2019-11-01
  */
@@ -45,6 +47,7 @@ public class User {
     @Email(message = "邮箱格式不正确")
     private String email;
 
+    @NonNull
     @NotBlank(message = "手机号码不能为空")
     @Pattern(regexp = "^[1][3,4,5,6,7,8,9][0-9]{9}$", message = "手机号格式有误")
     private String phone;
