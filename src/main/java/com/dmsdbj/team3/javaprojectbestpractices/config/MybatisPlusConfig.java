@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @Date 2019/11/1 12:13
  */
 @Configuration
-@MapperScan("com.dmsdbj.team3.javaprojectbestpractices.mapper*")
+@MapperScan("com.dmsdbj.team3.javaprojectbestpractices.dao*")
 public class MybatisPlusConfig {
 
 	@Bean

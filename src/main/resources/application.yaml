@@ -1,5 +1,5 @@
 mybatis-plus:
-  mapper-locations: classpath:mapper/*.xml
+  mapper-locations: classpath:mapper/**/*.xml
   type-aliases-package: com.dmsdbj.team3.javaprojectbestpractices.entity
 
 spring:
@@ -26,3 +26,16 @@ spring:
         wall:
         enabled: true
 
+
+swagger:
+  title: Best Practices
+  contact:
+    name: sunshine
+    email: 18333640045@163.com
+    url:
+  version: 1.0.1
+  description: SSM project best practices
+  base-package: com.dmsdbj.team3.javaprojectbestpractices.controller
+  base-path: /**
+  license: "许可证"
+  license-url: ""

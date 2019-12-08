@@ -12,6 +12,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * <p>
  * 前端控制器
@@ -20,7 +22,7 @@ import org.springframework.web.bind.annotation.*;
  * @author sunshine
  * @since 2019-11-01
  */
-@Api(tags = "用户管理接口")
+
 @RestController
 @Slf4j
 public class UserController implements IUserController{
@@ -60,7 +62,13 @@ public class UserController implements IUserController{
 	public ResultBean getUserList(Page page) {
 		page.setDesc("name");
 		IPage iPage = userService.page(page);
-
 		return ResultBean.success(iPage);
+	}
+
+	@Override
+	@WebLog(description = "获取某个人信息")
+	public ResultBean getUserByName(String name) {
+		List<User> userByName = userService.getUserByName(name);
+		return ResultBean.success(userByName);
 	}
 }
