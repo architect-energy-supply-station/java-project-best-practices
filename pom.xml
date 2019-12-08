@@ -6,13 +6,21 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.2.1.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>com.dmsdbj.team3</groupId>
     <artifactId>java-project-best-practices</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>java-project-best-practices</name>
     <description>Demo project for Spring Boot</description>
+
+    <!--从私服拉取jar包-->
+    <repositories>
+        <repository>
+            <id>sunshineNexus</id>
+            <url>http://192.168.3.18:8081/repository/best-practices-release/</url>
+        </repository>
+    </repositories>
 
     <properties>
         <java.version>1.8</java.version>
@@ -98,11 +106,10 @@
             <version>2.9.2</version>
         </dependency>
 
-
         <dependency>
             <groupId>com.github.sunshinezmh</groupId>
             <artifactId>swagger-spring-boot-starter</artifactId>
-            <version>0.0.6.RELEASE</version>
+            <version>0.0.7.RELEASE</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
@@ -161,13 +168,12 @@
             <version>2.5</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.github.2gis.winium/winium-elements-desktop -->
-        <dependency>
-            <groupId>com.github.2gis.winium</groupId>
-            <artifactId>winium-elements-desktop</artifactId>
-            <version>0.2.0-1</version>
-        </dependency>
 
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+            <version>1.1.3</version>
+        </dependency>
     </dependencies>
 
     <build>

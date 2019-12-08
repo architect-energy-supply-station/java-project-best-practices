@@ -6,7 +6,7 @@ spring:
 ---
 
 server:
-  port: 8081
+  port: 8084
   servlet:
     context-path: /spring-best-practices
 management:
@@ -14,11 +14,15 @@ management:
     web:
       exposure:
         include: "*"
+      base-path: /monitor
   endpoint:
     health:
       show-details: always
     shutdown:
       enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
 
 spring:
   profiles: dev
@@ -77,6 +81,9 @@ swagger:
   license: "许可证"
   license-url: ""
 
+
+
+
 ---
 
 
@@ -116,6 +123,7 @@ mybatis-plus:
       logic-delete-value: 1
       logic-not-delete-value: 0
 
+
 swagger:
   title: Best Practices-Test
   contact:
@@ -128,6 +136,18 @@ swagger:
   base-path: /**
   license: "许可证"
   license-url: ""
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: /monitor
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
 
 
 ---
@@ -170,6 +190,17 @@ mybatis-plus:
       logic-delete-value: 1
       logic-not-delete-value: 0
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: /monitor
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
 
 swagger:
   title: Best Practices-Prod
