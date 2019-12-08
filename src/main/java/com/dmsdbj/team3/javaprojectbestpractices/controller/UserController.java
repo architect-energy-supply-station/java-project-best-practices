@@ -10,6 +10,7 @@ import com.dmsdbj.team3.javaprojectbestpractices.service.IUserService;
 import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -29,7 +30,8 @@ public class UserController implements IUserController{
 
 	@Autowired
 	IUserService userService;
-
+	@Value("${MYENGLISHNAME.value}")
+	private String myEnglishName;
 
 
 	@Override
@@ -70,5 +72,12 @@ public class UserController implements IUserController{
 	public ResultBean getUserByName(String name) {
 		List<User> userByName = userService.getUserByName(name);
 		return ResultBean.success(userByName);
+	}
+
+	@Override
+	public String getSettingValue() {
+		String myName = myEnglishName;
+		log.info("我的英文名字为： {}",myName);
+		return myName;
 	}
 }

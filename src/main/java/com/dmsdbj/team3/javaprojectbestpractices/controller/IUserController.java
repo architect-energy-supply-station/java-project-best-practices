@@ -8,6 +8,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.web.bind.annotation.*;
+import sun.awt.SunHints;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
@@ -27,19 +28,23 @@ public interface IUserController {
     @PostMapping("/user/save")
     ResultBean saveUser(@ApiParam(value = "userEntity", required = true) @RequestBody @Valid User userEntity);
 
-    @ApiOperation(value = "根据id删除用户",notes = "返回删除id")
+    @ApiOperation(value = "根据id删除用户", notes = "返回删除id")
     @DeleteMapping("/user/remove/{id}")
-    ResultBean removeUser(@ApiParam(value = "id",required = true)@NotNull @PathVariable("id") int id);
+    ResultBean removeUser(@ApiParam(value = "id", required = true) @NotNull @PathVariable("id") int id);
 
-    @ApiOperation(value = "根据id显示用户信息",notes = "返回userEntity实体")
+    @ApiOperation(value = "根据id显示用户信息", notes = "返回userEntity实体")
     @GetMapping("/user/info/{id}")
-    ResultBean getUser(@ApiParam(value = "id",required = true)@NotNull @PathVariable("id") int id);
+    ResultBean getUser(@ApiParam(value = "id", required = true) @NotNull @PathVariable("id") int id);
 
-    @ApiOperation(value = "显示用户信息列表",notes = "返回分页")
+    @ApiOperation(value = "显示用户信息列表", notes = "返回分页")
     @GetMapping("/user/list")
-    ResultBean getUserList(@ApiParam(value = "page")@NotNull @Valid Page page);
+    ResultBean getUserList(@ApiParam(value = "page") @NotNull @Valid Page page);
 
-    @ApiOperation(value = "根据姓名查询用户信息",notes = "返回实体")
+    @ApiOperation(value = "根据姓名查询用户信息", notes = "返回实体")
     @GetMapping("/user/getUserByName/{name}")
-    ResultBean getUserByName(@ApiParam(value = "name",required = true)@NotBlank String name);
+    ResultBean getUserByName(@ApiParam(value = "name", required = true) @NotBlank String name);
+
+    @ApiOperation(value = "查询配置文件中自定义属性的值")
+    @GetMapping("/user/getSettingValue")
+    String getSettingValue();
 }

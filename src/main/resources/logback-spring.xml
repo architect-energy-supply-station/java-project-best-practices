@@ -5,7 +5,8 @@
     <appender name="consoleLog" class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
             <pattern>
-                %d{yyyy/MM/dd-HH:mm:ss} %level [%X{TRACE_ID}] [%thread] %caller{1} - %msg%n
+<!--                %d{yyyy/MM/dd-HH:mm:ss} %level [%X{TRACE_ID}] [%thread] %caller{1} - %msg%n-->
+                %red(%d{yyyy/MM/dd-HH:mm:ss})  %yellow(%level) %blue([%X{TRACE_ID}]) %highlight([%thread]) %green(%caller{1}) - %msg%n
             </pattern>
         </layout>
     </appender>
@@ -36,7 +37,7 @@
         </filter>
         <encoder>
             <pattern>
-                %d{yyyy/MM/dd-HH:mm:ss} %level [%X{TRACE_ID}] [%thread] %caller{1} - %msg%n
+                %red(%d{yyyy/MM/dd-HH:mm:ss})  %yellow(%level) %blue([%X{TRACE_ID}]) %highlight([%thread]) %green(%caller{1}) - %msg%n
             </pattern>
         </encoder>
         <!--滚动策略-->
@@ -46,7 +47,7 @@
         </rollingPolicy>
     </appender>
 
-    输出info文件
+<!--    输出info文件-->
     <appender name="fileInfoLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <!--过滤error日志-->
@@ -56,7 +57,8 @@
         </filter>
         <encoder>
             <pattern>
-                %d{yyyy/MM/dd-HH:mm:ss} %level [%X{TRACE_ID}] [%thread] %caller{1} - %msg%n
+                %red%d{yyyy/MM/dd-HH:mm:ss}  %yellow%level %blue[%X{TRACE_ID}] %highlight[%thread] %green%caller{1} - %msg%n
+<!--                %d{yyyy/MM/dd-HH:mm:ss} %level [%X{TRACE_ID}] [%thread] %caller{1} - %msg%n-->
             </pattern>
         </encoder>
         <!--滚动策略-->
@@ -69,7 +71,8 @@
     <appender name="addIntegralLogAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <encoder>
             <pattern>
-                %d{yyyy/MM/dd-HH:mm:ss} %level [%X{TRACE_ID}] [%thread] %caller{1} - %msg%n
+                %red%d{yyyy/MM/dd-HH:mm:ss}  %yellow%level %blue[%X{TRACE_ID}] %highlight[%thread] %green%caller{1} - %msg%n
+<!--                %d{yyyy/MM/dd-HH:mm:ss} %level [%X{TRACE_ID}] [%thread] %caller{1} - %msg%n-->
             </pattern>
         </encoder>
     </appender>

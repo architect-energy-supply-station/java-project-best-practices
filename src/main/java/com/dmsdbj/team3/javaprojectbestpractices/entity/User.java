@@ -70,13 +70,13 @@ public class User {
     @ApiModelProperty("是否删除")
     private int deleted;
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+//    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @ApiModelProperty("创建时间")
-    private Data createTime;
+    private String createTime;
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+//    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @ApiModelProperty("更新时间")
-    private Data updateTime;
+    private String updateTime;
 
 //    @ApiModelProperty("附加")
 //    private String otherInfo;
