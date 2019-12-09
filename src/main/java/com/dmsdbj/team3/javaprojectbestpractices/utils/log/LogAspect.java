@@ -1,10 +1,12 @@
 package com.dmsdbj.team3.javaprojectbestpractices.utils.log;
 
+import com.baomidou.mybatisplus.core.toolkit.IdWorker;
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.slf4j.MDC;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -48,6 +50,8 @@ public class LogAspect {
     public Object doAroud(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
 //        定义开始时间（接口调用）
         long startTime = System.currentTimeMillis();
+//        添加MDC IdWorker.getIdStr():生成唯一标识
+        MDC.put(TRACE_ID, IdWorker.getIdStr());
         //       在切点方法 执行切点
         Object result = proceedingJoinPoint.proceed();
 //        日志
@@ -55,6 +59,8 @@ public class LogAspect {
         log.info("Response Args: {}", new Gson().toJson(result));
 //        执行耗时
         log.info("Time-Consuming:{} ms", System.currentTimeMillis() - startTime);
+//        移除MDC
+        MDC.remove(TRACE_ID);
         return result;
     }
 

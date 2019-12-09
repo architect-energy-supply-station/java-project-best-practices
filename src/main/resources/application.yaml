@@ -1,6 +1,10 @@
 mybatis-plus:
-  mapper-locations: classpath:mapper/*.xml
+  mapper-locations: classpath:mapper/**/*.xml
   type-aliases-package: com.dmsdbj.team3.javaprojectbestpractices.entity
+  global-config::
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
 
 spring:
   datasource:
