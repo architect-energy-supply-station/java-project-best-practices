@@ -109,7 +109,7 @@
         <dependency>
             <groupId>com.github.sunshinezmh</groupId>
             <artifactId>swagger-spring-boot-starter</artifactId>
-            <version>0.0.7.RELEASE</version>
+            <version>0.0.8.RELEASE</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
