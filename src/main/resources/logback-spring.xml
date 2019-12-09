@@ -76,7 +76,7 @@
 
 
     <!--全局应用该日志配置-->
-    <root level="info">
+    <root level="ERROR">
         <appender-ref ref="consoleLog"/>
         <appender-ref ref="fileErrorLog"/>
         <appender-ref ref="fileInfoLog"/>

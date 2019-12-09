@@ -4,3 +4,361 @@
 1575269592774|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1575269592784|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1575269593632|1|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|/* ping */ SELECT 1|/* ping */ SELECT 1
+1575600507672|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575600507699|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575600507729|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575600507776|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575600507797|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575600523079|5|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575600523086|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575604750979|7|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575604751010|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575604751038|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575604751064|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575604751090|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575604790650|0|statement|connection 5|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575604790677|0|statement|connection 6|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575604790699|0|statement|connection 7|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575604790720|0|statement|connection 8|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575604790741|0|statement|connection 9|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575604856961|0|statement|connection 10|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575604856982|0|statement|connection 11|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575604857001|0|statement|connection 12|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575604857021|0|statement|connection 13|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575604857042|0|statement|connection 14|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605139670|0|statement|connection 15|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605139689|0|statement|connection 16|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605139709|0|statement|connection 17|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605139731|0|statement|connection 18|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605139753|0|statement|connection 19|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605164187|0|statement|connection 20|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605164207|0|statement|connection 21|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605164226|0|statement|connection 22|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605164247|0|statement|connection 23|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605164266|0|statement|connection 24|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605181222|0|statement|connection 25|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605181242|0|statement|connection 26|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605181262|0|statement|connection 27|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605181288|0|statement|connection 28|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605181308|0|statement|connection 29|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605219361|0|statement|connection 30|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605219381|0|statement|connection 31|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605219399|0|statement|connection 32|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605219418|0|statement|connection 33|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605219439|0|statement|connection 34|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605236796|0|statement|connection 35|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605236820|0|statement|connection 36|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605236845|0|statement|connection 37|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605236863|0|statement|connection 38|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605236883|0|statement|connection 39|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605290045|0|statement|connection 40|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605290065|0|statement|connection 41|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605290086|0|statement|connection 42|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605290105|0|statement|connection 43|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605290126|0|statement|connection 44|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605456367|1|statement|connection 44|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575605456383|1|statement|connection 44|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=2
+1575605467629|1|statement|connection 44|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|INSERT INTO user  ( id, name, age, email, phone, userEvaluation )  VALUES  ( ?, ?, ?, ?, ?, ? )|INSERT INTO user  ( id, name, age, email, phone, userEvaluation )  VALUES  ( 1, 'demoData', 1, 'demoData', 'demoData', 'demoData' )
+1575605467633|3|commit|connection 44|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice||
+1575605496805|1|statement|connection 44|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|DELETE FROM user WHERE id=?|DELETE FROM user WHERE id=14
+1575605496807|1|commit|connection 44|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice||
+1575606448888|0|statement|connection 45|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575606448908|0|statement|connection 46|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575606448927|0|statement|connection 47|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575606448945|0|statement|connection 48|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575606448963|0|statement|connection 49|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615126517|0|statement|connection 50|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615126540|0|statement|connection 51|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615126561|0|statement|connection 52|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615126586|0|statement|connection 53|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615126606|0|statement|connection 54|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615784040|0|statement|connection 55|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615784059|0|statement|connection 56|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615784078|0|statement|connection 57|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615784097|0|statement|connection 58|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575615784118|0|statement|connection 59|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616110253|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616110276|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616110299|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616110324|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616110344|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616260868|6|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616260893|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616260916|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616260950|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616260995|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616275602|6|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616275634|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616275656|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616275679|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616275700|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616450982|6|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616451017|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616451037|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616451056|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616451080|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616549260|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616549316|10|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|INSERT INTO user  ( id, name, age, email, phone, userEvaluation )  VALUES  ( ?, ?, ?, ?, ?, ? )|INSERT INTO user  ( id, name, age, email, phone, userEvaluation )  VALUES  ( 1, 'demoData', 1, 'demoData', 'demoData', 'demoData' )
+1575616549353|0|rollback|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice||
+1575616574347|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|INSERT INTO user  ( id, name, age, email, phone, userEvaluation )  VALUES  ( ?, ?, ?, ?, ?, ? )|INSERT INTO user  ( id, name, age, email, phone, userEvaluation )  VALUES  ( 66, 'demoData', 1, 'demoData', 'demoData', 'demoData' )
+1575616574350|2|commit|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice||
+1575616604303|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name >= ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name >= 'demoData'
+1575616716601|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616716602|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name >= ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name >= 'demoData'
+1575616880619|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616880625|2|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name >= ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name >= 'demoData'
+1575616908051|0|statement|connection 5|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616908072|0|statement|connection 6|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616908093|0|statement|connection 7|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616908114|0|statement|connection 8|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575616908135|0|statement|connection 9|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617144333|1|statement|connection 9|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617144342|0|statement|connection 9|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name >= ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name >= 'demoData'
+1575617225930|0|statement|connection 9|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617225932|0|statement|connection 9|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name >= ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name >= 'demoData'
+1575617262620|6|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617262647|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617262668|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617262688|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617262708|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617270459|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = 'demoData'
+1575617324436|0|statement|connection 5|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617324457|0|statement|connection 6|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617324481|0|statement|connection 7|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617324503|0|statement|connection 8|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617324527|0|statement|connection 9|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617416160|6|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617416189|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617416211|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617416232|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617416257|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617432888|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = 'demoData'
+1575617457458|6|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617457481|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617457501|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617457521|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617457541|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617594205|6|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617594229|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617594250|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617594269|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575617594306|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575618141270|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575618141293|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575618141326|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575618141346|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575618141368|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575618672303|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575618672326|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575618809949|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575618809976|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575618809999|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575618810021|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575618810044|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575618819808|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = 'demoData'
+1575618982017|6|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575618982042|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575618982063|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575618982085|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575618982106|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575619007932|2|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575619007942|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575619544469|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575619544494|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575619544515|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575619544537|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575619544558|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620430740|6|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620430765|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620430790|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620430811|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620430833|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620458011|7|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620458041|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620458062|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620458082|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620458103|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620462329|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=1
+1575620495460|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620495488|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620495510|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620495533|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620495554|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620522873|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = 'demoData'
+1575620595772|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620595798|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620595820|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620595842|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620595865|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620621497|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = 'demoData'
+1575620721150|6|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620721176|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620721198|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620721219|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620721241|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620759573|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620759599|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620759620|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620759644|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620759668|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620802595|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620802619|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620802641|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620802664|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620802684|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620836469|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620836496|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620836519|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620836539|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620836561|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620931896|8|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620931920|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620931943|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620931966|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620931986|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575620948895|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = 'demoData'
+1575621102622|0|statement|connection 5|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621102642|0|statement|connection 6|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621102663|0|statement|connection 7|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621102687|0|statement|connection 8|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621102707|0|statement|connection 9|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621217898|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621217921|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621217940|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621217961|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621217981|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621272565|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621272589|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621272610|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621272630|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621272649|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621321523|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621321557|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621321577|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621321597|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621321617|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621354560|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575621354571|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575621491636|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621491639|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575621491641|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575621699882|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621699908|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621699936|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621699960|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621699981|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621735685|7|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621735712|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621735733|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621735753|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621735775|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621933221|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621933246|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621933267|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621933289|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621933309|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621941606|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = 'demoData'
+1575621946829|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575621946834|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575621981115|0|statement|connection 5|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621981134|0|statement|connection 6|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621981155|0|statement|connection 7|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621981177|0|statement|connection 8|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575621981217|0|statement|connection 9|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575622000024|1|statement|connection 9|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575622000026|1|statement|connection 9|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575622063489|0|statement|connection 10|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575622063512|0|statement|connection 11|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575622063532|0|statement|connection 12|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575622063553|0|statement|connection 13|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575622063572|0|statement|connection 14|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575622905379|0|statement|connection 15|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575622905401|0|statement|connection 16|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575622905423|0|statement|connection 17|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575622905445|0|statement|connection 18|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575622905468|0|statement|connection 19|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575622972029|0|statement|connection 20|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575622972052|0|statement|connection 21|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575622972072|1|statement|connection 22|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575622972092|0|statement|connection 23|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575622972112|0|statement|connection 24|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575623594367|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575623594395|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575623594416|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575623594443|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575623594463|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624046835|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624046852|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = 'demoData'
+1575624106174|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624106198|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624106220|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624106240|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624106262|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624194744|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624194762|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = '"demoData"'
+1575624209475|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=2
+1575624248728|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = '"demoData"'
+1575624270352|6|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624270387|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624270407|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624270428|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624270447|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624400642|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624400662|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = '"demoData"'
+1575624440651|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = '"demoData"'
+1575624536284|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624536286|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = 'demoData'
+1575624557747|6|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624557771|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624557796|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624557819|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624557840|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624570028|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = 'demoData'
+1575624598942|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=2
+1575624770778|6|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624770807|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624770828|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624770849|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624770870|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624902663|6|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624902688|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624902712|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624902732|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624902756|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575624923053|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=2
+1575624924704|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = 'demoData'
+1575625002365|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575625002390|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575625002412|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575625002433|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575625002455|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575625011556|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575625011566|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575625074768|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575625074791|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575625074813|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575625074834|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575625074862|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575625107615|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575625107640|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575625107660|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575625107681|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575625107702|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575625132422|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575625132432|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575625133690|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation FROM user WHERE id=2
+1575625134645|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = 'demoData'
+1575635013080|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575635013107|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575635013129|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575635013151|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575635013172|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575635102288|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575635102307|1|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user     WHERE name = 'demoData'
+1575635106700|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1575635106704|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation  FROM user ORDER BY name DESC LIMIT 0,1
+1575635121370|5|statement|connection 0|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575635121396|0|statement|connection 1|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575635121418|0|statement|connection 2|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575635121439|0|statement|connection 3|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1575635121460|0|statement|connection 4|url jdbc:p6spy:mysql://192.168.72.133:3306/best-practice|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL

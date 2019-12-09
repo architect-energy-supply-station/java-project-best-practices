@@ -9,6 +9,8 @@ import com.dmsdbj.team3.javaprojectbestpractices.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * <p>
  * 前端控制器
@@ -17,37 +19,46 @@ import org.springframework.web.bind.annotation.*;
  * @author sunshine
  * @since 2019-11-01
  */
-@RestController
+
+@RestController()
+@RequestMapping("/v1/users")
 public class UserController {
 
 	@Autowired
 	IUserService userService;
 
 
-	@PostMapping("/user/save")
+	@PostMapping()
 	public String saveUser(@RequestBody User userEntity) {
 		userService.save(userEntity);
 		return "success insert user = " + JSON.toJSONString(userEntity);
 	}
 
-	@RequestMapping("/user/remove")
-	public String removeUser(@RequestParam("id") int id) {
+	@DeleteMapping("/{id}")
+	public String removeUser(@PathVariable("id") int id) {
 		userService.removeById(id);
 		return "success delete userId = " + id;
 	}
 
 
-
-	@RequestMapping("/user/info")
-	public User getUser(@RequestParam("id") int id) {
+	@GetMapping("{id}")
+	public User getUser(@PathVariable("id") int id) {
 		User userEntity = userService.getById(id);
 		return userEntity;
 	}
 
-	@RequestMapping("/user/list")
-	public IPage getUserList(Page page) {
-		page.setDesc("name");
-		IPage iPage = userService.page(page);
+	@GetMapping()
+	public List<User> getUserByName(@RequestParam String name) {
+		return userService.getUserByName(name);
+	}
+
+	@GetMapping("/actions/paging")
+	public IPage getUserList(@RequestParam int page, @RequestParam int pageSize) {
+		Page pageModel = new Page();
+		pageModel.setDesc("name");
+		pageModel.setSize(pageSize);
+		pageModel.setCurrent(page);
+		IPage iPage = userService.page(pageModel);
 		return iPage;
 	}
 }
