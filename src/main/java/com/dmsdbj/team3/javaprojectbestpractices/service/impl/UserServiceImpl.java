@@ -28,6 +28,13 @@ public class UserServiceImpl extends ServiceImpl<UserDao, User> implements IUser
 	@Autowired
 	UserDao userDao;
 
+	/**
+	 * 根据姓名模糊查询信息
+	 * @param
+	 * @return
+	 * @auther sunshinezhang
+	 * @date 2019/12/9 8:43 下午
+	 */
 	@Override
 	public List<User> getUserByLikeName(String queryName) {
 		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
@@ -64,4 +71,19 @@ public class UserServiceImpl extends ServiceImpl<UserDao, User> implements IUser
 			return false;
 		}
 	}
+
+	/**
+	 *
+	 * @param
+	 * @return
+	 * @auther sunshinezhang
+	 * @date 2019/12/9 8:42 下午
+	 */
+	@Override
+	public List<User> getUserByEmail(String email){
+		return this.baseMapper.selectList(new QueryWrapper<User>()
+				.lambda()
+				.eq(User::getEmail, email));
+	}
+
 }

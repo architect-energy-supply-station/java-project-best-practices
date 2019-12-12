@@ -18,6 +18,7 @@ public interface IUserService extends IService<User> {
 
 	List<User> getUserByLikeName(String queryName);
 
+	List<User> getUserByEmail(String email);
 
 	//根据用户的手机号更新用户信息
 	boolean updateUserByPhone(String oldPhone,String newPhone) throws Exception;

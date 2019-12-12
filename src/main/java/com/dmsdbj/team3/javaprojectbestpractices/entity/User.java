@@ -9,7 +9,6 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
-import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.Column;
 import javax.validation.constraints.Email;
@@ -44,8 +43,6 @@ public class User implements Serializable {
 	 * 姓名
 	 */
 	@NotBlank(message = "用户名不能为空")
-	@Length(min = 6, max = 20, message = "用户名需要为 6 - 20 个字符")
-	@Pattern(regexp = "^[\\u4E00-\\u9FA5A-Za-z0-9\\*]*$", message = "用户昵称限制：最多20字符，包含文字、字母和数字")
 	private String name;
 
 	/**
