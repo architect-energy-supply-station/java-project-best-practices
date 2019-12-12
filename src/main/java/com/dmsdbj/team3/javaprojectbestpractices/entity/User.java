@@ -1,9 +1,7 @@
 package com.dmsdbj.team3.javaprojectbestpractices.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -16,6 +14,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import java.util.Date;
 
 /**
  * <p>
@@ -68,15 +67,20 @@ public class User {
     private String userEvaluation;
 
     @ApiModelProperty("是否删除")
+    @TableLogic
     private int deleted;
 
-//    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    //    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     @ApiModelProperty("创建时间")
-    private String createTime;
+    @TableField(fill = FieldFill.INSERT)
+    private Date createTime;
 
-//    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    //    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @ApiModelProperty("更新时间")
-    private String updateTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    @TableField(fill = FieldFill.INSERT_UPDATE)
+    private Date updateTime;
 
 //    @ApiModelProperty("附加")
 //    private String otherInfo;
