@@ -168,6 +168,11 @@
             <version>2.5</version>
         </dependency>
 
+        <!-- 添加flywaydb依赖-->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>io.micrometer</groupId>
