@@ -67,7 +67,7 @@ public class UserServiceImpl extends ServiceImpl<UserDao, User> implements IUser
 			userDao.updateById(userByPhone);
 			return true;
 		}catch(Exception e){
-			log.info("用户更新手机号失败. phone=[{}]",oldPhone);
+			log.error("用户更新手机号失败. phone=[{}]",oldPhone);
 			return false;
 		}
 	}
