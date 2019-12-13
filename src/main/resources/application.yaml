@@ -5,10 +5,11 @@ mybatis-plus:
 spring:
   datasource:
     druid:
+      platform: mysql
       driver-class-name: com.p6spy.engine.spy.P6SpyDriver
-      url: jdbc:p6spy:mysql://localhost:3306/test
+      url: jdbc:p6spy:mysql://localhost:3306/flyway_test
       username: root
-      password: 12345678
+      password: rmm19950822
       db-type: com.alibaba.druid.pool.DruidDataSource
       min-idle: 5
       initial-size: 5
@@ -25,17 +26,12 @@ spring:
       filter:
         wall:
         enabled: true
-#flyway
-#打开flyway
-  flyway.enabled=true
-  flyway.encoding=utf-8
-  #sql文件存放位置
-  flyway.locations=classpath:db/migration
-  #版本记录表格
-  flyway.table=schemas_version
-  flyway.baseline-on-migrate=true
-  flyway.validate-on-migrate=false
-logging:
-  level:
-    org:
-      flywaydb=debug
+  #flyway
+  flyway:
+    enabled=true
+    baseline-on-migrate=true
+    locations=classpath:/db/migration
+  logging:
+    level:
+      org:
+        flywaydb=debug
