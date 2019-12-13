@@ -120,3 +120,80 @@
 1576113970817|0|statement|connection 19|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1576113970823|0|statement|connection 19|url jdbc:p6spy:mysql://localhost:3306/test|INSERT INTO user  ( name, age, email, phone, userEvaluation, deleted, create_time, update_time )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ? )|INSERT INTO user  ( name, age, email, phone, userEvaluation, deleted, create_time, update_time )  VALUES  ( 'rth', 30, '1245string@qq.com', '18624683762', 'string', 0, '2019-12-12T09:26:10.821+0800', '2019-12-12T09:26:10.821+0800' )
 1576113970824|0|commit|connection 19|url jdbc:p6spy:mysql://localhost:3306/test||
+1576136732880|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576136732896|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576136732908|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576136732920|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576136732931|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576136918003|0|statement|connection 5|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576136918016|0|statement|connection 6|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576136918028|0|statement|connection 7|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576136918039|0|statement|connection 8|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576136918049|0|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137040226|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137040241|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137040252|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137040265|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137040277|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137066975|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT  id,name,age,email,phone,userEvaluation,deleted,create_time,update_time  FROM user     WHERE name LIKE ?|SELECT  id,name,age,email,phone,userEvaluation,deleted,create_time,update_time  FROM user     WHERE name LIKE '%李欢%'
+1576137223294|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137223309|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137223321|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137223333|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137223344|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137247104|8|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT  id,name,age,email,phone,userEvaluation,deleted,create_time,update_time  FROM user     WHERE name LIKE ?|SELECT  id,name,age,email,phone,userEvaluation,deleted,create_time,update_time  FROM user     WHERE name LIKE '%李欢%'
+1576137340416|0|statement|connection 5|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137340428|0|statement|connection 6|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137340440|0|statement|connection 7|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137340452|0|statement|connection 8|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137340469|0|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137348836|4|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137348850|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137348862|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137348873|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137348884|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137353366|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT  id,name,age,email,phone,userEvaluation,deleted,create_time,update_time  FROM user     WHERE name LIKE ?|SELECT  id,name,age,email,phone,userEvaluation,deleted,create_time,update_time  FROM user     WHERE name LIKE '%欢%'
+1576137473295|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137473310|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137473322|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137473335|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137473347|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576137484608|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT  id,name,age,email,phone,userEvaluation,deleted,create_time,update_time  FROM user     WHERE name LIKE ?|SELECT  id,name,age,email,phone,userEvaluation,deleted,create_time,update_time  FROM user     WHERE name LIKE '%欢%'
+1576138082410|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576138082425|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576138082437|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576138082449|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576138082460|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576142063267|0|statement|connection 5|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576142063287|0|statement|connection 6|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576142063304|0|statement|connection 7|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576142063322|0|statement|connection 8|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576142063339|1|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576205997411|8|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576205997429|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576205997441|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576205997453|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576205997465|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206057914|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206057972|23|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1576206057983|4|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT  id,name,age,email,phone,userEvaluation,deleted,create_time,update_time  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation,deleted,create_time,update_time  FROM user ORDER BY name DESC LIMIT 0,10
+1576206205005|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206205019|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206205031|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206205042|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206205053|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206218117|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1576206218123|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT  id,name,age,email,phone,userEvaluation,deleted,create_time,update_time  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation,deleted,create_time,update_time  FROM user ORDER BY name DESC LIMIT 0,10
+1576206525200|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206525216|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206525227|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206525239|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206525251|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206598132|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206598147|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206598172|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206598199|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206598225|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206662698|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576206662729|1|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1576206662735|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT  id,name,age,email,phone,userEvaluation,deleted,create_time,update_time  FROM user ORDER BY name DESC LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation,deleted,create_time,update_time  FROM user ORDER BY name DESC LIMIT 0,10

@@ -23,28 +23,29 @@ import javax.validation.constraints.NotNull;
  **/
 
 @Api(tags = "用户管理接口")
+@RequestMapping("v1/users/")
 public interface IUserController {
     @ApiOperation(value = "新增用户接口", notes = "返回userEntity实体")
-    @PostMapping("/user/save")
+    @PostMapping("save")
     ResultBean saveUser(@ApiParam(value = "userEntity", required = true) @RequestBody @Valid User userEntity);
 
     @ApiOperation(value = "根据id删除用户", notes = "返回删除id")
-    @DeleteMapping("/user/remove/{id}")
+    @DeleteMapping("remove/{id}")
     ResultBean removeUser(@ApiParam(value = "id", required = true) @NotNull @PathVariable("id") int id);
 
     @ApiOperation(value = "根据id显示用户信息", notes = "返回userEntity实体")
-    @GetMapping("/user/info/{id}")
+    @GetMapping("info/{id}")
     ResultBean getUser(@ApiParam(value = "id", required = true) @NotNull @PathVariable("id") int id);
 
     @ApiOperation(value = "显示用户信息列表", notes = "返回分页")
-    @GetMapping("/user/list")
+    @GetMapping("list")
     ResultBean getUserList(@ApiParam(value = "page") @NotNull @Valid Page page);
 
     @ApiOperation(value = "根据姓名查询用户信息", notes = "返回实体")
-    @GetMapping("/user/getUserByName/{name}")
-    ResultBean getUserByName(@ApiParam(value = "name", required = true) @NotBlank String name);
+    @GetMapping("getUserByName/{name}")
+    ResultBean getUserByName(@ApiParam(value = "name", required = true) @NotBlank @PathVariable("name") String name);
 
     @ApiOperation(value = "查询配置文件中自定义属性的值")
-    @GetMapping("/user/getSettingValue")
+    @GetMapping("getSettingValue")
     String getSettingValue();
 }

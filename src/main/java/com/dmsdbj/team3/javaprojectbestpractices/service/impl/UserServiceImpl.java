@@ -41,6 +41,7 @@ public class UserServiceImpl extends ServiceImpl<UserDao, User> implements IUser
         QueryWrapper<User> userQueryWrapper = new QueryWrapper<>();
         userQueryWrapper.lambda().like(User::getName, name);
         List<User> userList = list(userQueryWrapper);
+
         return userList;
     }
 }
