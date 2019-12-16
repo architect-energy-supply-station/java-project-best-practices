@@ -1,6 +1,7 @@
 package com.dmsdbj.team3.javaprojectbestpractices.service.impl;
 
 import com.alibaba.fastjson.JSON;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
 import com.dmsdbj.team3.javaprojectbestpractices.mapper.UserMapper;
@@ -14,7 +15,7 @@ import java.util.List;
 
 /**
  * <p>
- *  服务实现类
+ * 服务实现类
  * </p>
  *
  * @author sunshine
@@ -26,6 +27,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
     @Autowired
     UserMapper userMapper;
+
     @Override
     @Transactional
     public boolean updateUserByPhone(String oldPhone, String newPhone) {
@@ -33,7 +35,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         boolean debug = log.isDebugEnabled();
         if (debug) {
 //            打印日志方式：参数=[{}]
-            log.debug("用户输入的新旧手机号. args[oldPhone=[{}],newPhone=[{}]])",oldPhone,newPhone);
+            log.debug("用户输入的新旧手机号. args[oldPhone=[{}],newPhone=[{}]])", oldPhone, newPhone);
         }
 
         try {
@@ -45,14 +47,24 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
             userMapper.updateById(userByPhone);
             return true;
         } catch (Exception e) {
-            log.error("用户更新手机号失败. phone=[{}]",oldPhone,e);
+            log.error("用户更新手机号失败. phone=[{}]", oldPhone, e);
             return false;
         }
     }
 
     @Override
     public List<User> getUserByLikeName(String name) {
-        return null;
+        //声明User泛型 QueryWrapper 对象
+        QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+
+        //将模糊查询的字段用like方法赋给wrapper对象
+        queryWrapper.like("name", name);
+
+        log.info("用户输入的模糊查询的内容:[{}]", name);
+
+//      调用mp方法selectList,  将queryWrapper对象作为参数，
+        List<User> userList = userMapper.selectList(queryWrapper);
+        return userList;
     }
 
 }

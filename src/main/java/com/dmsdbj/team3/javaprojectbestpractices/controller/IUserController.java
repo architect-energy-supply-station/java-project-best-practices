@@ -43,4 +43,8 @@ public interface IUserController {
     @PostMapping("/user/updateUserByPhone/{oldPhone}/{newPhone}")
     ResultBean<Boolean> updateUserByPhone(@ApiParam(value = "oldPhone", required = true) @NotBlank @Pattern(regexp = "^[1][3,4,6,7,8,9][0-9]{9}$",message = "手机号码格式错误") @PathVariable String oldPhone, @ApiParam(value = "newPhone", required = true) @Pattern(regexp = "^1(3|4|5|7|8)\\d{9}$", message = "手机号码格式错误") @PathVariable String newPhone);
 
+    @ApiOperation(value = "查询得到配置文件中自定义属性的值")
+    @GetMapping("/user/getSettingValue")
+    String getSettingValue();
+
 }
