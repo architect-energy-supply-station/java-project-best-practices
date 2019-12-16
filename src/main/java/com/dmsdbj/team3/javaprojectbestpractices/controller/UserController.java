@@ -20,6 +20,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class UserController {
 
+
+
 	@Autowired
 	IUserService userService;
 
@@ -30,13 +32,23 @@ public class UserController {
 		return "success insert user = " + JSON.toJSONString(userEntity);
 	}
 
-	@RequestMapping("/user/remove")
+	@RequestMapping("/user/selectUserByPhone")
+	public User selectUserByPhone(String phone) {
+		User user=userService.selectUserByPhone(phone);
+		return user;
+	}
+
+	@PostMapping("/user/updateUserByPhone")
+	public boolean updateUserByPhone(@RequestParam("newPhone")String newPhone,@RequestParam("oldPhone") String oldPhone) {
+		boolean result = userService.updateUserByPhone(newPhone, oldPhone);
+		return result;
+	}
+
+	@DeleteMapping("/user/remove")
 	public String removeUser(@RequestParam("id") int id) {
 		userService.removeById(id);
 		return "success delete userId = " + id;
 	}
-
-
 
 	@RequestMapping("/user/info")
 	public User getUser(@RequestParam("id") int id) {
@@ -49,5 +61,11 @@ public class UserController {
 		page.setDesc("name");
 		IPage iPage = userService.page(page);
 		return iPage;
+	}
+
+	@RequestMapping("/user/getUserByLikeName")
+	public User getUserByLikeName(@RequestParam("name") String name) {
+		User user=userService.getUserByLikeName(name);
+		return user;
 	}
 }

@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * <p>
@@ -21,7 +23,7 @@ public class User {
     /**
      * 表主键 此处需要设置为数据库ID自增
      */
-    //@TableId(type = IdType.AUTO)
+    @TableId(type = IdType.AUTO)
     private long id;
     private String name;
     private int age;
@@ -31,6 +33,8 @@ public class User {
      * 此处故意用了类字段名和数据库列明不相符
      * 可以用@TableField注解来表示
      */
+    @Getter
+    @Setter
     @TableField("userEvaluation")
     private String evaluation;
 }
