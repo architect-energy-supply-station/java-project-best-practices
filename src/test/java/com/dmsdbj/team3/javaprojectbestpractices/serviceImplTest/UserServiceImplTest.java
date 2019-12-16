@@ -1,6 +1,5 @@
 package com.dmsdbj.team3.javaprojectbestpractices.serviceImplTest;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
 import com.dmsdbj.team3.javaprojectbestpractices.mapper.UserMapper;
 import com.dmsdbj.team3.javaprojectbestpractices.service.impl.UserServiceImpl;

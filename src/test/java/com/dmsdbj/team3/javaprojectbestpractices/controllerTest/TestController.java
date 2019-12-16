@@ -44,7 +44,6 @@ public class TestController extends AbstractTestNGSpringContextTests {
 
     @BeforeClass
     public void bfTest() {
-        System.out.println("UserController BeforTest!");
         user = new User();
         user.setAge(2);
         user.setName("Chris");
