@@ -407,3 +407,15 @@
 1576479701074|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1576479701085|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1576479701096|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576588171064|7|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576588171081|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576588171092|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576588171104|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576588171114|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576590378873|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/flyway_test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576590378888|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/flyway_test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576590378900|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/flyway_test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576590378912|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/flyway_test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576590378923|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/flyway_test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1576590407615|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/flyway_test|SELECT COUNT(1) FROM User WHERE deleted = 0|SELECT COUNT(1) FROM User WHERE deleted = 0
+1576590407623|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/flyway_test|SELECT  id,userEvaluation,deleted,create_time,phone,name,update_time,email,age  FROM User   WHERE  deleted=0 LIMIT ?,?|SELECT  id,userEvaluation,deleted,create_time,phone,name,update_time,email,age  FROM User   WHERE  deleted=0 LIMIT 0,10

@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.extension.handlers.FastjsonTypeHandler;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -25,8 +26,8 @@ import java.util.Date;
  * @author sunshine
  * @since 2019-11-01
  */
-@TableName("User")
-//@TableName(autoResultMap = true)
+//@TableName("User")
+@TableName(autoResultMap = true)
 //mybatis-plus类型处理器，JavaType 与 JdbcType 之间的转换,mybatis-plus-generator这个组件上的
 //为使用该注解的类自动生成equals和hashCode方法 lombok注解
 @EqualsAndHashCode(callSuper = false)
@@ -90,7 +91,7 @@ public class User implements Serializable {
     @TableField("userEvaluation")
     private String userEvaluation;
 
-//    @TableField(typeHandler = FastjsonTypeHandler.class)
-//    private OtherInfo otherInfo;
+    @TableField(typeHandler = FastjsonTypeHandler.class)
+    private OtherInfo otherInfo;
 
 }
