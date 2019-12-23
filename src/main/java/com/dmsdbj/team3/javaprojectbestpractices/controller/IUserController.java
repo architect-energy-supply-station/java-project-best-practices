@@ -1,6 +1,5 @@
 package com.dmsdbj.team3.javaprojectbestpractices.controller;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.dmsdbj.team3.javaprojectbestpractices.config.ResultBean;
 import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
@@ -8,11 +7,11 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.web.bind.annotation.*;
-import sun.awt.SunHints;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 /**
  * @ClassName java-project-best-practices
@@ -38,7 +37,7 @@ public interface IUserController {
     ResultBean getUser(@ApiParam(value = "id", required = true) @NotNull @PathVariable("id") int id);
 
     @ApiOperation(value = "显示用户信息列表", notes = "返回分页")
-    @GetMapping("list")
+    @GetMapping("getUserList")
     ResultBean getUserList(@ApiParam(value = "page") @NotNull @Valid Page page);
 
     @ApiOperation(value = "根据姓名查询用户信息", notes = "返回实体")
@@ -48,4 +47,9 @@ public interface IUserController {
     @ApiOperation(value = "查询配置文件中自定义属性的值")
     @GetMapping("getSettingValue")
     String getSettingValue();
+
+    @ApiOperation(value = "根据用户的手机号更新用户信息", notes = "请输入用户的新旧手机号")
+    @GetMapping("updateUserByPhone/{oldPhone}/{newPhone}")
+    ResultBean<Boolean> updateUserByPhone(@ApiParam(value = "oldPhone", required = true) @NotBlank @Pattern(regexp = "^[1][3,4,5,6,7,8,9][0-9]{9}$", message = "手机号码格式错误") @RequestParam("oldPhone") String oldPhone, @ApiParam(value = "newPhone", required = true) @NotBlank @Pattern(regexp = "^1(3|4|5|7|8)\\d{9}$", message = "手机号码格式错误") @RequestParam("newPhone") String newPhone) throws Exception;
+
 }

@@ -7,8 +7,6 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
-import org.springframework.context.annotation.Profile;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -37,7 +35,7 @@ public class User {
     @ApiModelProperty("用户id")
     @TableId(type = IdType.AUTO)
     @NotNull
-    private long id;
+    private int id;
     @NotBlank(message = "姓名不能为空")
     @ApiModelProperty("姓名")
     private String name;
