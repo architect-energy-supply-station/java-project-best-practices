@@ -79,6 +79,12 @@
             <version>6.8</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- 添加flywaydb依赖-->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+        </dependency>
     <!--日志框架-->
     <dependency>
         <groupId>ch.qos.logback</groupId>
