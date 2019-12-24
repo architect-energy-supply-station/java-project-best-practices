@@ -23,7 +23,7 @@ public class mapperTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void getUserByPhoneOneTest() {
-        Assert.assertEquals(userDao.getUserByPhone("2").getId(),3);
+        Assert.assertEquals(userDao.getUserByPhone("18624683756").getId(),15);
     }
 
     @Test

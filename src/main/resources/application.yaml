@@ -38,7 +38,7 @@ spring:
     name: java-best-practices
   datasource:
     druid:
-      url: jdbc:p6spy:mysql://localhost:3306/flyway_test
+      url: jdbc:p6spy:mysql://192.168.3.8:3306/flyway_test
       driver-class-name: com.p6spy.engine.spy.P6SpyDriver
       username: root
       password: rootren00.

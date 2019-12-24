@@ -1,28 +1,18 @@
 package com.dmsdbj.team3.javaprojectbestpractices.serviceTest;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.dmsdbj.team3.javaprojectbestpractices.dao.UserDao;
 import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
 import com.dmsdbj.team3.javaprojectbestpractices.service.impl.UserServiceImpl;
-import com.sun.xml.internal.bind.v2.TODO;
-import javafx.beans.binding.When;
-import org.junit.Before;
-import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
-import org.mockito.junit.MockitoJUnitRunner;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.nio.file.LinkOption;
 import java.util.ArrayList;
 import java.util.List;
 
