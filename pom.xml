@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.dmsdbj.team3</groupId>
     <artifactId>java-project-best-practices</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>java-project-best-practices</name>
     <description>Demo project for Spring Boot</description>
 
@@ -128,40 +128,71 @@
 
             </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <!--此名称要和.m2/settings.xml中设置的ID一致 -->
+            <id>cook</id>
+            <url>http://192.168.226.149:8081/repository/cookNexus/</url>
+        </repository>
+    </distributionManagement>
+
+<!--    <build>-->
+<!--        <finalName>bestpractices</finalName>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    &lt;!&ndash;fork :  如果没有该项配置，这个devtools不会起作用，即应用不会restart &ndash;&gt;-->
+<!--                    <fork>true</fork>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--&lt;!&ndash;            <plugin>&ndash;&gt;-->
+<!--&lt;!&ndash;                <groupId>com.spotify</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;                <artifactId>dockerfile-maven-plugin</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;                <version>1.4.10</version>&ndash;&gt;-->
+<!--&lt;!&ndash;                <executions>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <execution>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <id>default</id>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <goals>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <goal>build</goal>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <goal>push</goal>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </goals>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </execution>&ndash;&gt;-->
+<!--&lt;!&ndash;                </executions>&ndash;&gt;-->
+<!--&lt;!&ndash;                <configuration>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <repository>192.168.226.149/test</repository>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <tag>${project.version}</tag>&ndash;&gt;-->
+<!--&lt;!&ndash;                </configuration>&ndash;&gt;-->
+<!--&lt;!&ndash;            </plugin>&ndash;&gt;-->
+<!--        </plugins>-->
+<!--    </build>-->
 
 
     <build>
-        <finalName>bestpractices</finalName>
         <plugins>
+            <!--发布代码Jar插件 -->
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <!--fork :  如果没有该项配置，这个devtools不会起作用，即应用不会restart -->
-                    <fork>true</fork>
-                </configuration>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.7</version>
             </plugin>
+            <!--发布源码插件 -->
             <plugin>
-                <groupId>com.spotify</groupId>
-                <artifactId>dockerfile-maven-plugin</artifactId>
-                <version>1.4.10</version>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
                 <executions>
                     <execution>
-                        <id>default</id>
+                        <phase>package</phase>
                         <goals>
-                            <goal>build</goal>
-                            <goal>push</goal>
+                            <goal>jar</goal>
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <repository>192.168.226.149/test</repository>
-                    <tag>${project.version}</tag>
-                </configuration>
             </plugin>
         </plugins>
     </build>
-
     <profiles>
         <profile>
             <id>dev</id>
