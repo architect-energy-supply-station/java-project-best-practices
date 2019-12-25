@@ -16,6 +16,8 @@
 
     <properties>
         <java.version>1.8</java.version>
+<!--        <docker.registry.name.prefix>192.168.226.149:80/</docker.registry.name.prefix>-->
+
     </properties>
 
     <dependencies>
@@ -111,21 +113,6 @@
         </dependency>
 
 
-<!--                &lt;!&ndash;        集成swagger2&ndash;&gt;-->
-<!--                <dependency>-->
-<!--                    <groupId>io.springfox</groupId>-->
-<!--                    <artifactId>springfox-swagger2</artifactId>-->
-<!--                    <version>2.9.2</version>-->
-<!--                </dependency>-->
-<!--                <dependency>-->
-<!--                    <groupId>io.springfox</groupId>-->
-<!--                    <artifactId>springfox-swagger-ui</artifactId>-->
-<!--                    <version>2.9.2</version>-->
-<!--                </dependency>
-
-
-                <!-        devtools-->
-
         <dependency>
             <groupId>Cook-R</groupId>
             <artifactId>swagger-spring-boot-starter</artifactId>
@@ -141,15 +128,39 @@
 
             </dependencies>
 
+
+
     <build>
+        <finalName>bestpractices</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!--fork :  如果没有该项配置，这个devtools不会起作用，即应用不会restart -->
+                    <fork>true</fork>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>1.4.10</version>
+                <executions>
+                    <execution>
+                        <id>default</id>
+                        <goals>
+                            <goal>build</goal>
+                            <goal>push</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <repository>192.168.226.149/test</repository>
+                    <tag>${project.version}</tag>
+                </configuration>
             </plugin>
         </plugins>
     </build>
-
 
     <profiles>
         <profile>
@@ -176,4 +187,5 @@
             </properties>
         </profile>
     </profiles>
+
 </project>
