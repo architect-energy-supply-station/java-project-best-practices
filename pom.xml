@@ -87,6 +87,13 @@
             <version>2.9.2</version>
         </dependency>
 
+<!--         自定义starter：swagger-->
+        <dependency>
+            <groupId>com.github.ITManito</groupId>
+            <artifactId>swagger-spring-boot-starter</artifactId>
+            <version>0.0.9.RELEASE</version>
+        </dependency>
+
         <!-- aop 依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

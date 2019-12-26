@@ -1,6 +1,7 @@
 package com.dmsdbj.team3.javaprojectbestpractices.service.impl;
 
 import com.alibaba.fastjson.JSON;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
@@ -30,7 +31,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
     @Override
     @Transactional
-    public boolean updateUserByPhone(String oldPhone, String newPhone) {
+    public boolean updateUserByPhone(String oldPhone, String newPhone) throws Exception {
 //        why 加，不加不行么
         boolean debug = log.isDebugEnabled();
         if (debug) {
@@ -65,6 +66,13 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 //      调用mp方法selectList,  将queryWrapper对象作为参数，
         List<User> userList = userMapper.selectList(queryWrapper);
         return userList;
+    }
+
+    @Override
+    public List<User> getUserByEmail(String email) {
+//        两种方式都可以
+//        return this.baseMapper.selectList(new QueryWrapper<User>().lambda().eq(User::getEmail, email));
+        return this.baseMapper.selectList(new LambdaQueryWrapper<User>().eq(User::getEmail, email));
     }
 
 }

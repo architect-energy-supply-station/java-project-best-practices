@@ -57,10 +57,12 @@ public class WebExceptionHandler {
 //        返回结果
         return ResultBean.error(-999, "发生了未知异常，请联系系统管理员");
     }
-
+    /**
+     * 404异常处理
+     */
     @ExceptionHandler(value = NoHandlerFoundException.class)
-    public ResultBean NoHandlerFoundExceptionHandler(HttpServletRequest req, Exception e) {
-        log.error("异常详情", e);
+    public ResultBean NoHandlerFoundExceptionHandler(HttpServletRequest req, Exception e) throws Exception {
+        log.debug("异常详情", e);
         return ResultBean.error(404, "页面不存在");
     }
 

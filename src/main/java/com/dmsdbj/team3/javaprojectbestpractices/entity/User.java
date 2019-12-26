@@ -9,14 +9,15 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
-import org.hibernate.validator.constraints.Length;
 
+import javax.persistence.Column;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import java.io.Serializable;
 import java.util.Date;
+
 
 /**
  * <p>
@@ -48,9 +49,9 @@ public class User implements Serializable {
      * 姓名 NotBlank：判空，String类型
      */
     @NotBlank(message = "用户名不能空")
-    @Length(min = 6, max = 20, message = "用户名需要为 6 - 20 个字符")
-    //和Java正则表达式匹配
-    @Pattern(regexp = "^[\\u4E00-\\u9FA5A-Za-z0-9\\*]*$", message = "用户昵称限制：最多20字符，包含文字、字母和数字")
+//    @Length(min = 6, max = 20, message = "用户名需要为 6 - 20 个字符")
+//    //和Java正则表达式匹配
+//    @Pattern(regexp = "^[\\u4E00-\\u9FA5A-Za-z0-9\\*]*$", message = "用户昵称限制：最多20字符，包含文字、字母和数字")
     private String name;
 
     /**
@@ -74,11 +75,11 @@ public class User implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
 //    自动填充（mybatis-plus注解）
     @TableField(fill = FieldFill.INSERT)
-//    @Column(name = "create_time")
+    @Column(name = "create_time")
     private Date createTime;
-
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
-//    @Column(name = "update_time")
+//
+//    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    @Column(name = "update_time")
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 

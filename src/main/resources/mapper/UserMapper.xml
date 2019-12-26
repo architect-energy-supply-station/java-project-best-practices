@@ -13,7 +13,7 @@
         <result column="deleted" property="deleted"/>
         <result column="create_time" property="createTime"/>
         <result column="update_time" property="updateTime"/>
-        <result column="other_info" jdbcType="varchar" property="otherInfo" typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTyoeHandler"/>
+        <result column="other_info" jdbcType="VARCHAR" property="otherInfo" typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
     </resultMap>
     <sql id="Base_Column_List">
 id, name,age,email,phone,userEvaluation,deleted,create_time,update_time,other_info

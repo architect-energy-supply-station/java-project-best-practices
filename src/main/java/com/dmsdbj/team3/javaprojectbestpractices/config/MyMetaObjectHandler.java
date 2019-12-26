@@ -2,6 +2,7 @@ package com.dmsdbj.team3.javaprojectbestpractices.config;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import org.apache.ibatis.reflection.MetaObject;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.Date;
 
@@ -14,6 +15,7 @@ import java.util.Date;
  * @Email 18232466045@163.com
  * @Contract https://github.com/ITManito
  */
+@Configuration
 public class MyMetaObjectHandler implements MetaObjectHandler {
     //    插入填充
     @Override
