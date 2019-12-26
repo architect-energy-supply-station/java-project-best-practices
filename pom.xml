@@ -16,7 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-<!--        <docker.registry.name.prefix>192.168.226.149:80/</docker.registry.name.prefix>-->
+
 
     </properties>
 
@@ -150,38 +150,64 @@
                     <fork>true</fork>
                 </configuration>
             </plugin>
+
+
+            <!--使用jib插件-->
             <plugin>
-                <groupId>com.spotify</groupId>
-                <artifactId>dockerfile-maven-plugin</artifactId>
-                <version>1.4.10</version>
-                <executions>
-                    <execution>
-                        <id>default</id>
-                        <goals>
-                            <goal>build</goal>
-                            <goal>push</goal>
-                        </goals>
-                    </execution>
-                </executions>
+                <!-- https://mvnrepository.com/artifact/com.google.cloud.tools/jib-maven-plugin -->
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>1.6.1</version>
                 <configuration>
-
-<!--                    <dockerInfoDirectory>src/main/docker</dockerInfoDirectory>-->
-<!--                    <dockerConfigFile>src/main/docker</dockerConfigFile>-->
-<!--                    <username>zmh</username>-->
-<!--                    <password>6688</password>-->
-<!--                    <repository>com.dmsdbj.team3</repository>-->
-<!--                    <tag>v20191226</tag>-->
-                    <repository>cookwaiting/config-server</repository>
-<!--                    <username>cookwaiting</username>-->
-<!--                    <password>ren1017r</password>-->
-                    <useMavenSettingsForAuth>true</useMavenSettingsForAuth>
-                    <tag>${project.version}</tag>
-                    <buildArgs>
-                        <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
-                    </buildArgs>
+                    <!--from节点用来设置镜像的基础镜像，相当于Docerkfile中的FROM关键字-->
+                    <from>
+                        <!--使用openjdk官方镜像-->
+                        <image>openjdk:alpine</image>
+                    </from>
+                    <to>
+                        <!--镜像名称和tag，使用了mvn内置变量${project.version}，表示当前工程的version-->
+                        <!--                        <image>helloworld/alfred:jibtest:${project.version}</image>-->
+                        <image>cookwaiting/bestpracticesjib</image>
+                    </to>
+                    <!--容器相关的属性-->
+                    <container>
+                        <!--jvm内存参数-->
+                        <jvmFlags>
+                            <jvmFlag>-Xms4g</jvmFlag>
+                            <jvmFlag>-Xmx4g</jvmFlag>
+                        </jvmFlags>
+                        <!--要暴露的端口-->
+                        <ports>
+                            <port>8083</port>
+                        </ports>
+                        <creationTime>USE_CURRENT_TIMESTAMP</creationTime>
+                    </container>
                 </configuration>
-
             </plugin>
+<!--            dockerfile-maven-plugin-->
+<!--            <plugin>-->
+<!--                <groupId>com.spotify</groupId>-->
+<!--                <artifactId>dockerfile-maven-plugin</artifactId>-->
+<!--                <version>1.4.10</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>default</id>-->
+<!--                        <goals>-->
+<!--                            <goal>build</goal>-->
+<!--                            <goal>push</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--                <configuration>-->
+<!--                    <repository>cookwaiting/config-server</repository>-->
+<!--                    <useMavenSettingsForAuth>true</useMavenSettingsForAuth>-->
+<!--                    <tag>${project.version}</tag>-->
+<!--                    <buildArgs>-->
+<!--                        <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>-->
+<!--                    </buildArgs>-->
+<!--                </configuration>-->
+
+<!--            </plugin>-->
 
 <!--            &lt;!&ndash;发布代码Jar插件 &ndash;&gt;-->
 <!--            <plugin>-->
