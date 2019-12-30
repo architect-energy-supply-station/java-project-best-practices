@@ -50,6 +50,4 @@ public interface IUserController {
     @ApiOperation(value = "查询得到配置文件中自定义属性的值")
     @GetMapping("/user/getSettingValue")
     String getSettingValue();
-
-
 }

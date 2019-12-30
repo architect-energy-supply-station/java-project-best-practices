@@ -74,5 +74,4 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 //        return this.baseMapper.selectList(new QueryWrapper<User>().lambda().eq(User::getEmail, email));
         return this.baseMapper.selectList(new LambdaQueryWrapper<User>().eq(User::getEmail, email));
     }
-
 }

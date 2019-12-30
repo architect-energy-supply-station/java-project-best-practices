@@ -9,6 +9,7 @@ server:
   servlet:
     context-path: /spring-best-practices
 
+#    Prometheus配置文件
 management:
   endpoints:
     web:
@@ -22,6 +23,7 @@ management:
   metrics:
     tags:
       application: ${spring.application.name}
+
 
 spring:
   profiles: dev
@@ -92,7 +94,6 @@ swagger:
   base-path: /**
   license: "许可证"
   license-url: ""
-
 ---
 
 server:
@@ -161,7 +162,7 @@ spring:
       max-active: 20
       max-wait: 60000
       #      如果当前连接池中某个连接在空闲了timeBetweenEvictionRunsMillis时间后任然没有使用，则被物理性的关闭掉。
-      time-between-eviction-runs-millis: 60000
+      time-between-eviction-runs-millis: 60
       # 配置一个连接在池中最小生存的时间，单位是毫秒
       min-evictable-idle-time-millis: 30000
       validation-query: SELECT 1 FROM DUAL
