@@ -4,10 +4,14 @@ package com.dmsdbj.team3.javaprojectbestpractices.controller;
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.dmsdbj.team3.javaprojectbestpractices.aspect.WebLog;
 import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
 import com.dmsdbj.team3.javaprojectbestpractices.service.IUserService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.logging.Logger;
 
 /**
  * <p>
@@ -25,6 +29,7 @@ public class UserController {
 
 
 	@PostMapping("/user/save")
+	@WebLog(description = "请求用户登陆接口")
 	public String saveUser(@RequestBody User userEntity) {
 		userService.save(userEntity);
 		return "success insert user = " + JSON.toJSONString(userEntity);
