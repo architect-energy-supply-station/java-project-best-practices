@@ -1,16 +1,16 @@
 package com.dmsdbj.team3.javaprojectbestpractices.controller;
 
 
-import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.dmsdbj.team3.javaprojectbestpractices.aspect.WebLog;
+import com.dmsdbj.team3.javaprojectbestpractices.aspect.Log;
 import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
 import com.dmsdbj.team3.javaprojectbestpractices.service.IUserService;
-import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.logging.Logger;
 
 /**
@@ -22,37 +22,37 @@ import java.util.logging.Logger;
  * @since 2019-11-01
  */
 @RestController
-public class UserController {
-
+public class UserController implements IUserController{
 	@Autowired
-	IUserService userService;
+	private IUserService userService;
 
+	@Override
+	@Log(description = "根据Id查询用户")
+	public User getUser(int id) {
+		User user = userService.getById(id);
 
-	@PostMapping("/user/save")
-	@WebLog(description = "请求用户登陆接口")
-	public String saveUser(@RequestBody User userEntity) {
-		userService.save(userEntity);
-		return "success insert user = " + JSON.toJSONString(userEntity);
+		return user;
 	}
 
-	@RequestMapping("/user/remove")
-	public String removeUser(@RequestParam("id") int id) {
-		userService.removeById(id);
-		return "success delete userId = " + id;
-	}
-
-
-
-	@RequestMapping("/user/info")
-	public User getUser(@RequestParam("id") int id) {
-		User userEntity = userService.getById(id);
-		return userEntity;
-	}
-
-	@RequestMapping("/user/list")
+	@Override
+	@Log
 	public IPage getUserList(Page page) {
-		page.setDesc("name");
 		IPage iPage = userService.page(page);
 		return iPage;
 	}
+
+	@Override
+	@Log(description = "根据UserId删除一个用户")
+	public String removeUser(int id) {
+		userService.removeById(id);
+		return "success remove userId=" + id;
+	}
+
+	@Override
+	@Log(description = "新增一个用户")
+	public String saveUser(@RequestBody  @Valid User user) {
+		userService.save(user);
+		return "success insert user =" +user;
+	}
+
 }
