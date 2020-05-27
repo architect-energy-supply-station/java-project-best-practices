@@ -2,6 +2,7 @@ package com.dmsdbj.team3.javaprojectbestpractices.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
+import org.springframework.stereotype.Repository;
 
 /**
  * <p>
@@ -11,6 +12,8 @@ import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
  * @author sunshine
  * @since 2019-11-01
  */
+@Repository
 public interface UserMapper extends BaseMapper<User> {
 
+//    User getUserByPhone(String oldPhone);
 }

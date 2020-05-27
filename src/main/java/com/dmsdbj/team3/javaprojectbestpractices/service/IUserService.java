@@ -3,6 +3,8 @@ package com.dmsdbj.team3.javaprojectbestpractices.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -13,4 +15,9 @@ import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
  */
 public interface IUserService extends IService<User> {
 
+//    boolean updateUserByPhone(String oldPhone, String newPhone);
+//
+//    List<User> getUserByEmail(String email);
+//
+//    List<User> getUserByLikeName(String name);
 }

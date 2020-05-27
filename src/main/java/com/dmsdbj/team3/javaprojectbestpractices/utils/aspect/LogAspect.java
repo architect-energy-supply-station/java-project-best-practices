@@ -1,4 +1,4 @@
-package com.dmsdbj.team3.javaprojectbestpractices.aspect;
+package com.dmsdbj.team3.javaprojectbestpractices.utils.aspect;
 
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
@@ -33,7 +33,7 @@ public class LogAspect {
     private static final String TRACE_ID = "TRACE_ID";
 
     //以自定义 @Log注解为切点
-    @Pointcut("@annotation(com.dmsdbj.team3.javaprojectbestpractices.aspect.Log)")
+    @Pointcut("@annotation(com.dmsdbj.team3.javaprojectbestpractices.utils.aspect.Log)")
     public void log() {
     }
 
