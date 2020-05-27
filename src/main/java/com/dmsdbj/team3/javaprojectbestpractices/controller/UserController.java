@@ -29,8 +29,8 @@ import java.util.List;
 @RestController
 @Slf4j
 public class UserController implements IUserController{
-	@Value("Jessica")
-	private String Jessica;
+	@Value("${MYENGLISHNAME.value}")
+	private String myEnglishName;
 	@Autowired
 	private IUserService userService;
 
@@ -112,9 +112,9 @@ public class UserController implements IUserController{
 
 	@Override
 	public String getSettingValue() {
-		String englishName = Jessica;
-		log.info("我的英文名字是：[{}]", Jessica);
-		return Jessica;
+		String englishName = myEnglishName;
+		log.info("我的英文名字是：[{}]", myEnglishName);
+		return myEnglishName;
 	}
 
 //	@Override
