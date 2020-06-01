@@ -34,58 +34,85 @@ public class UserController implements IUserController{
 	@Autowired
 	private IUserService userService;
 
+
+	@Override
+
+	public String getSettingValue() {
+		String englishName = myEnglishName;
+		log.info("我的英文名字是：[{}]", myEnglishName);
+		return myEnglishName;
+	}
+
 	@Override
 	@Log(description = "根据Id查询用户")
-	public ResultBean<User> getUser(@NotNull int id) {
+//	public User getUser(int id) {
+	public ResultBean<User> getUser(int id) {
+		User user = userService.getById(id);
 		return ResultBean.success(userService.getById(id));
+//		return user;
 	}
 
 	@Override
 	@Log(description = "查询所有用户")
-	public ResultBean<IPage> getUserList(@NotNull int page, @NotNull int pagesize) {
+//	public IPage getUserList(Page page) {
+	public ResultBean<IPage> getUserList(Page page) {
+//		IPage iPage = userService.page(page);
+//		return iPage;
 		Page page1 = new Page();
-		page1.setCurrent(page);
-		page1.setSize(pagesize);
 		IPage iPage = userService.page(page1);
 		if (iPage.getSize() >= 0) {
 			return ResultBean.success(iPage);
 		} else {
-			return ResultBean.error(111, "查询所有用户信息失败");
+			return ResultBean.error(1111, "查询所有用户信息失败");
 		}
 	}
 
 	@Override
 	@Log(description = "根据UserId删除一个用户")
-	public ResultBean<Boolean> removeUser(@NotNull int id) {
+//	public String removeUser(int id) {
+	public ResultBean<Boolean> removeUser(int id) {
+//		userService.removeById(id);
+//		return "success remove userId=" + id;
 		boolean removeFlag = userService.removeById(id);
 		if (removeFlag) {
 			return ResultBean.success(removeFlag);
-		} else {
-			return ResultBean.error(111, "根据UserId删除一个用户失败！");
+		}else {
+			return ResultBean.error(1111, "根据UserId删除一个用户失败");
 		}
 	}
 
 	@Override
 	@Log(description = "新增一个用户")
-	public ResultBean<Boolean> saveUser(@Valid User user) {
+//	public String saveUser(User user) {
+	public ResultBean<Boolean>  saveUser(User user) {
+//		userService.save(user);
+//		return "success insert user =" +user;
 		boolean saveFlag = userService.save(user);
 		if (saveFlag) {
 			return ResultBean.success(saveFlag);
-		} else {
-			return ResultBean.error(111, "新增一个用户失败");
+		}else {
+			return ResultBean.error(1111, "新增一个用户失败");
 		}
 	}
 
-//	@Override
-//	@Log(description = "根据姓名模糊查询")
-//	public ResultBean<User> getUserByLikeName(@NotBlank String name) {
-//		List<User> userByLikeNameList = userService.getUserByLikeName(name);
-//		if (userByLikeNameList.size() >= 0) {
-//			return ResultBean.success(userByLikeNameList);
-//		} else {
-//			return ResultBean.error(111, "根据姓名模糊查询信息失败");
-//		}
-//	}
+	@Override
+	@Log(description = "根据姓名模糊查询")
+//	public List<User> getUserByLikeName(String name) {
+	public ResultBean<User> getUserByLikeName(String name) {
+//		List<User> userList = userService.getUserByLikeName(name);
+//		return userList;
+		List<User> userByLikeNameList = userService.getUserByLikeName(name);
+		if (userByLikeNameList.size()>=0) {
+			return ResultBean.success(userByLikeNameList) ;
+		}else {
+			return ResultBean.error(1111, "根据姓名模糊查询信息失败");
+		}
+	}
+
+
+
+
+
 
 //	@Override
 //	@Log(description = "根据邮箱查询用户信息")
@@ -110,41 +137,9 @@ public class UserController implements IUserController{
 //
 //	}
 
-	@Override
-	public String getSettingValue() {
-		String englishName = myEnglishName;
-		log.info("我的英文名字是：[{}]", myEnglishName);
-		return myEnglishName;
-	}
 
-//	@Override
-//	@Log(description = "根据Id查询用户")
-//	public User getUser(int id) {
-//		User user = userService.getById(id);
-//
-//		return user;
-//	}
-//
-//	@Override
-//	@Log
-//	public IPage getUserList(Page page) {
-//		IPage iPage = userService.page(page);
-//		return iPage;
-//	}
-//
-//	@Override
-//	@Log(description = "根据UserId删除一个用户")
-//	public String removeUser(int id) {
-//		userService.removeById(id);
-//		return "success remove userId=" + id;
-//	}
-//
-//	@Override
-//	@Log(description = "新增一个用户")
-//	@Valid
-//	public String saveUser(@RequestBody  @Valid User user) {
-//		userService.save(user);
-//		return "success insert user =" +user;
-//	}
+
+
+
 
 }

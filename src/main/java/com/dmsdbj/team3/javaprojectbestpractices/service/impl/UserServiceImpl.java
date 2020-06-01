@@ -55,12 +55,12 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 //                .eq(User::getEmail, email));
 //    }
 
-//    @Override
-//    public List<User> getUserByLikeName(String name) {
-//        QueryWrapper<User> queryWrapper = new QueryWrapper<>();
-//        queryWrapper.like("name", name);
-//        log.info("用户输入的模糊查询的内容:[{}]", name);
-//        List<User> userList = userMapper.selectList(queryWrapper);
-//        return userList;
-//    }
+    @Override
+    public List<User> getUserByLikeName(String name) {
+        QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+        queryWrapper.like("name", name);
+        log.info("用户输入的模糊查询的内容:[{}]", name);
+        List<User> userList = userMapper.selectList(queryWrapper);
+        return userList;
+    }
 }

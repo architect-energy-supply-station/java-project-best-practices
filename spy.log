@@ -700,3 +700,211 @@
 1590605748727|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1590605748736|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
 1590605748746|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590972020305|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590972020371|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590972020384|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590972020395|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590972020405|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590972191550|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590972191564|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590972191585|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590972191595|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590972191605|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590973285185|0|statement|connection 5|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590973285201|0|statement|connection 6|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590973285218|0|statement|connection 7|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590973285233|0|statement|connection 8|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590973285247|0|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590973311348|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590973311374|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590973311390|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590973311399|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590973311409|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590973395565|0|statement|connection 5|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590973395575|0|statement|connection 6|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590973395585|0|statement|connection 7|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590973395597|0|statement|connection 8|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590973395606|0|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590976622812|1|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590976622854|4|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|DELETE FROM user WHERE id=?|DELETE FROM user WHERE id=2
+1590976622858|3|commit|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT||
+1590976647878|0|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|DELETE FROM user WHERE id=?|DELETE FROM user WHERE id=2
+1590976647879|0|commit|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT||
+1590976652263|14|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|DELETE FROM user WHERE id=?|DELETE FROM user WHERE id=3
+1590976652266|2|commit|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT||
+1590976655244|1|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|DELETE FROM user WHERE id=?|DELETE FROM user WHERE id=3
+1590976655244|0|commit|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT||
+1590976674315|0|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=2
+1590976679999|0|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=3
+1590976829786|0|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590976829808|3|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1590976829814|0|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT  id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time  FROM user LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time  FROM user LIMIT 0,10
+1590976865134|0|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=4
+1590976968703|7|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590976968717|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590976968727|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590976968737|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590976968748|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590977560939|9|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590977560960|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590977560975|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590977560990|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590977561005|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590979009327|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590979009341|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590979009352|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590979009362|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590979009372|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590979173304|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590979173318|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590979173330|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590979173341|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590979173352|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590980067773|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590980067787|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590980067798|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590980067808|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590980067817|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590982308582|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590982308596|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590982308606|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590982308617|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590982308628|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590982372734|0|statement|connection 5|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590982372744|0|statement|connection 6|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590982372753|0|statement|connection 7|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590982372762|0|statement|connection 8|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590982372774|3|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590983359043|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590983359057|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590983359066|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590983359076|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590983359085|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590986688529|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590986688542|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590986688556|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590986688569|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590986688579|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590988502268|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590988502282|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590988502292|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590988502302|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590988502311|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590988727990|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590988728004|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590988728014|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590988728024|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590988728034|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590995728842|8|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590995728886|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590995728896|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590995728906|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590995728915|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590996692263|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590996692278|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590996692287|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590996692298|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590996692307|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590996725451|16|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT  id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time  FROM user     WHERE name LIKE ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time  FROM user     WHERE name LIKE '%李四%'
+1590996764391|7|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590996764404|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590996764414|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590996764424|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590996764433|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590996818627|1|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=4
+1590996838013|1|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1590996838019|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT  id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time  FROM user LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time  FROM user LIMIT 0,1
+1590996867299|4|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|DELETE FROM user WHERE id=?|DELETE FROM user WHERE id=2
+1590996867304|4|commit|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT||
+1590996946647|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590996959656|18|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|INSERT INTO user  ( id, name, age, email, phone, userEvaluation, deleted, create_time, update_time )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ?, ? )|INSERT INTO user  ( id, name, age, email, phone, userEvaluation, deleted, create_time, update_time )  VALUES  ( 0, 'Jessica', 10, 'aa@163.com', '18831645427', 'test', 0, NULL, NULL )
+1590996969431|13|commit|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT||
+1590997180100|0|statement|connection 5|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997180110|0|statement|connection 6|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997180121|0|statement|connection 7|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997180132|0|statement|connection 8|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997180142|0|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997205812|0|statement|connection 10|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997205822|0|statement|connection 11|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997205830|0|statement|connection 12|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997205841|0|statement|connection 13|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997205851|0|statement|connection 14|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997244824|1|statement|connection 14|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=4
+1590997336228|0|statement|connection 15|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997336237|0|statement|connection 16|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997336246|0|statement|connection 17|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997336254|0|statement|connection 18|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997336263|0|statement|connection 19|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997502236|5|statement|connection 19|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997502247|6|statement|connection 19|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT  id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time  FROM user     WHERE name LIKE ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time  FROM user     WHERE name LIKE '%李%'
+1590997569231|4|statement|connection 19|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997569240|5|statement|connection 19|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=1
+1590997644532|1|statement|connection 19|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590997644534|0|statement|connection 19|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=3
+1590997696571|5|statement|connection 19|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1590997696581|5|statement|connection 19|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT  id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time  FROM user LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time  FROM user LIMIT 0,1
+1590997735376|13|statement|connection 19|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|DELETE FROM user WHERE id=?|DELETE FROM user WHERE id=3
+1590997735379|2|commit|connection 19|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT||
+1590998363116|0|statement|connection 20|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590998363125|0|statement|connection 21|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590998363133|0|statement|connection 22|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590998363143|0|statement|connection 23|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590998363152|0|statement|connection 24|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590998431573|1|statement|connection 24|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590998431574|0|statement|connection 24|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=5
+1590998449862|0|statement|connection 24|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=2
+1590998962897|0|statement|connection 25|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590998962907|0|statement|connection 26|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590998962917|0|statement|connection 27|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590998962927|0|statement|connection 28|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590998962937|0|statement|connection 29|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999075081|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999075093|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999075104|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999075113|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999075122|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999103131|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=5
+1590999103137|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=5
+1590999134537|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=2
+1590999134539|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=2
+1590999181028|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=4
+1590999181030|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=?|SELECT id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time FROM user WHERE id=4
+1590999197129|7|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999197142|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999197152|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999197162|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999197172|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999346966|0|statement|connection 5|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999346976|0|statement|connection 6|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999346993|0|statement|connection 7|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999347007|0|statement|connection 8|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999347018|0|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999371377|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999371390|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999371400|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999371409|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999371417|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999411692|2|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT COUNT(1) FROM user|SELECT COUNT(1) FROM user
+1590999411698|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT  id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time  FROM user LIMIT ?,?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time  FROM user LIMIT 0,10
+1590999866496|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999866510|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999866520|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999866530|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1590999866539|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1591000079541|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1591000079554|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1591000079564|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1591000079573|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1591000079581|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1591000147278|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1591000147330|12|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|INSERT INTO user  ( id, name, age, email, phone, userEvaluation, deleted, create_time, update_time )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ?, ? )|INSERT INTO user  ( id, name, age, email, phone, userEvaluation, deleted, create_time, update_time )  VALUES  ( 0, 'wangxiaobo', 80, 'aa@163.com', '18831645426', 'test', 0, NULL, NULL )
+1591000147333|2|commit|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT||
+1591000187752|2|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|DELETE FROM user WHERE id=?|DELETE FROM user WHERE id=10
+1591000187755|1|commit|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT||
+1591000271242|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1591000271255|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1591000271265|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1591000271275|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1591000271284|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+1591000300572|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT  id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time  FROM user     WHERE name LIKE ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time  FROM user     WHERE name LIKE '%j%'
+1591000317418|6|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT|SELECT  id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time  FROM user     WHERE name LIKE ?|SELECT  id,name,age,email,phone,userEvaluation AS evaluation,deleted,create_time,update_time  FROM user     WHERE name LIKE '%J%'

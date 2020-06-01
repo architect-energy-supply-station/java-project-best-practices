@@ -14,6 +14,7 @@ import java.util.List;
  * @since 2019-11-01
  */
 public interface IUserService extends IService<User> {
+    List<User> getUserByLikeName(String name);
 
 //    boolean updateUserByPhone(String oldPhone, String newPhone);
 //

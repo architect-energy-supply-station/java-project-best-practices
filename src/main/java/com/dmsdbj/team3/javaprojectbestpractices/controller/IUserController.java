@@ -14,25 +14,49 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import java.util.List;
 
 @Api(tags = {"用户表接口"})
 @Validated
 public interface IUserController {
     @ApiOperation(value = "根据Id查询用户", notes = "请输入用户ID")
     @GetMapping("/user/info/{id}")
+//    User getUser(@ApiParam(value = "id", required = true, defaultValue = "4") @NotNull @PathVariable("id") int id);
     ResultBean<User> getUser(@ApiParam(value = "id", required = true, defaultValue = "4") @NotNull @PathVariable("id") int id);
 
     @ApiOperation(value = "查询所有用户")
     @GetMapping("/user/list")
-    ResultBean<IPage> getUserList(@ApiParam(value = "page", required = true,defaultValue = "1")@NotNull @RequestParam int page,@ApiParam(value = "pageSize",required = true,defaultValue = "10")@NotNull @RequestParam int pagesize);
+    ResultBean<IPage> getUserList(@ApiParam(value = "page", required = true) @NotNull @Valid Page page);
 
     @ApiOperation(value = "根据UserId删除一个用户", notes = "请输入主键id进行查询")
     @DeleteMapping("/user/remove/{id}")
+//    String removeUser(@ApiParam(value = "id", required = true, defaultValue = "2") @NotNull @PathVariable("id") int id);
     ResultBean<Boolean> removeUser(@ApiParam(value = "id", required = true, defaultValue = "2") @NotNull @PathVariable("id") int id);
 
     @ApiOperation(value = "新增一个用户", notes = "请输入要新增的用户信息")
     @PostMapping("/user/save")
-    ResultBean<Boolean> saveUser(@ApiParam(value = "user", required = true)@Valid @RequestBody User user);
+//    String saveUser(@ApiParam(value = "user", required = true) @Valid @RequestBody User user);
+     ResultBean<Boolean>  saveUser(@ApiParam(value = "user", required = true) @Valid @RequestBody User user);
+
+    @ApiOperation(value = "根据姓名模糊查询", notes = "请输入要模糊查询的信息")
+    @GetMapping(value = {"/user/getUserByLikeName/{name}"})
+//    List<User> getUserByLikeName(@ApiParam(value = "name", required = true)@NotBlank @PathVariable String name);
+    ResultBean<User> getUserByLikeName(@ApiParam(value = "name", required = true)@NotBlank @PathVariable String name);
+//    @ApiOperation(value = "根据Id查询用户", notes = "请输入用户ID")
+//    @GetMapping("/user/info/{id}")
+//    ResultBean<User> getUser(@ApiParam(value = "id", required = true, defaultValue = "4") @NotNull @PathVariable("id") int id);
+//
+//    @ApiOperation(value = "查询所有用户")
+//    @GetMapping("/user/list")
+//    ResultBean<IPage> getUserList(@ApiParam(value = "page", required = true,defaultValue = "1")@NotNull @RequestParam int page,@ApiParam(value = "pageSize",required = true,defaultValue = "10")@NotNull @RequestParam int pagesize);
+//
+//    @ApiOperation(value = "根据UserId删除一个用户", notes = "请输入主键id进行查询")
+//    @DeleteMapping("/user/remove/{id}")
+//    ResultBean<Boolean> removeUser(@ApiParam(value = "id", required = true, defaultValue = "2") @NotNull @PathVariable("id") int id);
+//
+//    @ApiOperation(value = "新增一个用户", notes = "请输入要新增的用户信息")
+//    @PostMapping("/user/save")
+//    ResultBean<Boolean> saveUser(@ApiParam(value = "user", required = true) @RequestBody User user);
 
 //    @ApiOperation(value = "根据姓名模糊查询", notes = "请输入要模糊查询的信息")
 //    @GetMapping(params = "name")

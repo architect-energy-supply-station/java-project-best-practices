@@ -80,6 +80,7 @@ spring:
     druid:
       driver-class-name: com.p6spy.engine.spy.P6SpyDriver
       url: jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT
+#      url: jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=true&allowPublicKeyRetrieval=true
       username: root
       password: 123456
       db-type: com.alibaba.druid.pool.DruidDataSource
@@ -129,6 +130,7 @@ spring:
     druid:
       driver-class-name: com.p6spy.engine.spy.P6SpyDriver
       url: jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT
+#      url: jdbc:p6spy:mysql://localhost:3306/sys?serverTimezone=GMT&allowPublicKeyRetrieval=true
       username: root
       password: 123456
       db-type: com.alibaba.druid.pool.DruidDataSource
