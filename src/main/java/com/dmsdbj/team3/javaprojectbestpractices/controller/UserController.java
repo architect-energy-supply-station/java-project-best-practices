@@ -43,6 +43,16 @@ public class UserController implements IUserController{
 		return myEnglishName;
 	}
 
+//	@Override
+//	public ResultBean<Boolean> updateUserByName(String oldName, @NotBlank String newName) throws Exception {
+//		boolean bool = userService.updateUserByName(oldName, newName);
+//		if (bool) {
+//			return ResultBean.success(bool);
+//		} else {
+//			return ResultBean.error(111, "姓名更新失败");
+//		}
+//	}
+
 	@Override
 	@Log(description = "根据Id查询用户")
 //	public User getUser(int id) {
@@ -109,6 +119,20 @@ public class UserController implements IUserController{
 		}
 	}
 
+	@Override
+	@Log(description = "根据姓名模糊查询")
+//	public List<User> getUserByLikeName(String name) {
+	public ResultBean<User> getUserByName(String name) {
+//		List<User> userList = userService.getUserByLikeName(name);
+//		return userList;
+		List<User> userByNameList = userService.getUserByName(name);
+		if (userByNameList.size()>=0) {
+			return ResultBean.success(userByNameList) ;
+		}else {
+			return ResultBean.error(1111, "根据姓名模糊查询信息失败");
+		}
+	}
+
 
 
 
@@ -124,19 +148,17 @@ public class UserController implements IUserController{
 //			return ResultBean.error(111, "根据邮箱查询用户信息失败");
 //		}
 //	}
-
-//	@Override
-//	@Log(description = "根据用户的手机号更新用户信息")
-//	public ResultBean<Boolean> updateUserByPhone(@NotBlank @Pattern(regexp = "^[1][3,4,5,6,7,8,9][0-9]{9}$", message = "手机号码格式错误") String oldPhone, @NotBlank @Pattern(regexp = "^1(3|4|5|7|8)\\d{9}$", message = "手机号码格式错误") String newPhone) throws Exception {
-//		boolean bool = userService.updateUserByPhone(oldPhone, newPhone);
-//		if (bool) {
-//			return ResultBean.success(bool);
-//		} else {
-//			return ResultBean.error(111, "根据用户的手机号更新用户信息失败");
-//		}
-//
-//	}
-
+/*
+	@Override
+	@Log(description = "更新手机号")
+	public ResultBean<Boolean> updateUserByPhone(@NotBlank @Pattern(regexp = "^[1][3,4,5,6,7,8,9][0-9]{9}$", message = "手机号码格式错误") String oldPhone, @NotBlank @Pattern(regexp = "^1(3|4|5|7|8)\\d{9}$", message = "手机号码格式错误") String newPhone) throws Exception {
+		boolean bool = userService.updateUserByPhone(oldPhone, newPhone);
+		if (bool) {
+			return ResultBean.success(bool);
+		} else {
+			return ResultBean.error(111, "根据用户的手机号更新用户信息失败");
+		}
+	}*/
 
 
 

@@ -19,6 +19,7 @@ management:
     shutdown:
       enabled: true
 
+
 spring:
   profiles: dev
   application:
@@ -45,13 +46,28 @@ spring:
       filter:
         wall:
         enabled: true
+  devtools:
+    add-properties: false
+  logging:
+    level:
+      web: debug
+#  #flyway
+#  flyway:
+#    enabled: true
+#    baseline-on-migrate: true
+#    locations: classpath:/db/migration
+#  logging:
+#    level:
+#      org:
+#        flywaydb=debug
 mybatis-plus:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.dmsdbj.team3.javaprojectbestpractices.entity
   global-config:
     db-config:
-      logic-delete-value: 1
-      logic-not-delete-value: 0
+      logic-delete-field: flag  #全局逻辑删除字段值 3.3.0开始支持，详情看下面。
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
 
 MYENGLISHNAME:
   value: Jessica
@@ -104,8 +120,9 @@ mybatis-plus:
   type-aliases-package: com.dmsdbj.team3.javaprojectbestpractices.entity
   global-config:
     db-config:
-      logic-delete-value: 1
-      logic-not-delete-value: 0
+      logic-delete-field: flag  #全局逻辑删除字段值 3.3.0开始支持，详情看下面。
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
 ---
 server:
   port: 8082
@@ -154,5 +171,6 @@ mybatis-plus:
   type-aliases-package: com.dmsdbj.team3.javaprojectbestpractices.entity
   global-config:
     db-config:
-      logic-delete-value: 1
-      logic-not-delete-value: 0
+      logic-delete-field: flag  #全局逻辑删除字段值 3.3.0开始支持，详情看下面。
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)

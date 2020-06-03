@@ -42,6 +42,17 @@ public interface IUserController {
     @GetMapping(value = {"/user/getUserByLikeName/{name}"})
 //    List<User> getUserByLikeName(@ApiParam(value = "name", required = true)@NotBlank @PathVariable String name);
     ResultBean<User> getUserByLikeName(@ApiParam(value = "name", required = true)@NotBlank @PathVariable String name);
+
+    @ApiOperation(value = "查询得到配置文件中自定义属性的值")
+    @GetMapping("/user/getSettingValue")
+    String getSettingValue();
+
+    @ApiOperation(value = "根据用户姓名查询用户信息",notes = "请输入用户姓名")
+    @GetMapping("/user/getUserByName/{name}")
+    ResultBean<User> getUserByName(@ApiParam(value = "name", required = true)@NotBlank @PathVariable String name);
+
+
+
 //    @ApiOperation(value = "根据Id查询用户", notes = "请输入用户ID")
 //    @GetMapping("/user/info/{id}")
 //    ResultBean<User> getUser(@ApiParam(value = "id", required = true, defaultValue = "4") @NotNull @PathVariable("id") int id);
@@ -66,12 +77,14 @@ public interface IUserController {
 //    @GetMapping(params = "email")
 //    ResultBean<User> getUserByEmail(@ApiParam(value = "email", required = true) @NotBlank @RequestParam String email);
 
-//    @ApiOperation(value = "根据用户的手机号更新用户手机号", notes = "请输入用户的新旧手机号")
+//    @ApiOperation(value = "更新用户手机号", notes = "请输入用户的新旧手机号")
 //    @GetMapping("{oldPhone}/{newPhone}")
 //    ResultBean<Boolean> updateUserByPhone(@ApiParam(value = "oldPhone", required = true) @NotBlank @Pattern(regexp = "^[1][3,4,5,6,7,8,9][0-9]{9}$", message = "手机号码格式错误") @RequestParam("oldPhone") String oldPhone, @ApiParam(value = "newPhone", required = true) @NotBlank @Pattern(regexp = "^1(3|4|5|7|8)\\d{9}$", message = "手机号码格式错误") @RequestParam("newPhone") String newPhone) throws Exception;
 
-    @ApiOperation(value = "查询得到配置文件中自定义属性的值")
-    @GetMapping("/user/getSettingValue")
-    String getSettingValue();
+
+
+//    @ApiOperation(value = "更新用户名", notes = "请输入用户的新旧姓名")
+//    @GetMapping("{oldName}/{newName}")
+//    ResultBean<Boolean> updateUserByName(@ApiParam(value = "oldName", required = true) @RequestParam("oldName") String oldName, @NotBlank  @RequestParam("newName") String newName) throws Exception;
 
 }

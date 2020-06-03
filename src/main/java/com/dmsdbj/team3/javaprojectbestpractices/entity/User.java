@@ -1,5 +1,5 @@
 package com.dmsdbj.team3.javaprojectbestpractices.entity;
-
+import com.baomidou.mybatisplus.extension.handlers.FastjsonTypeHandler;
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableLogic;
@@ -8,6 +8,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+//import org.apache.ibatis.type.TypeHandlerer;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.Column;
@@ -26,13 +27,13 @@ import java.util.Date;
  * @author sunshine
  * @since 2019-11-01
  */
-@TableName("user")
+//@TableName("user")
 @Data
 @EqualsAndHashCode(callSuper = false)
 // @Accessors 注解用来配置lombok如何产生和显示getters 和setters 的方法
 // chain 为一个值，如果为true生成的set方法返回this, 为false生成的set方法是void类型。默认为false，除非当fluent为true时，chain默认则为true
 @Accessors(chain = true)
-
+//@TableName(authResultMap=true)
 public class User implements Serializable {
 
     /**
@@ -86,6 +87,8 @@ public class User implements Serializable {
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
+    @TableField(typeHandler = FastjsonTypeHandler.class)
+    private OtherInfo otherInfo;
 
 
 }

@@ -16,7 +16,13 @@ import java.util.List;
 public interface IUserService extends IService<User> {
     List<User> getUserByLikeName(String name);
 
+    List<User> getUserByName(String name);
+
 //    boolean updateUserByPhone(String oldPhone, String newPhone);
+
+//    boolean updateUserByPhone(String oldPhone, String newPhone);
+//
+//    boolean updateUserByName(String oldName, String newName);
 //
 //    List<User> getUserByEmail(String email);
 //
