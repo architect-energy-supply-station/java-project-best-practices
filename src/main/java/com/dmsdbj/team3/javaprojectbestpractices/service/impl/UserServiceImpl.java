@@ -2,18 +2,16 @@ package com.dmsdbj.team3.javaprojectbestpractices.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
-import com.dmsdbj.team3.javaprojectbestpractices.mapper.UserMapper;
+import com.dmsdbj.team3.javaprojectbestpractices.dao.UserDao;
 import com.dmsdbj.team3.javaprojectbestpractices.service.IUserService;
-import com.p6spy.engine.common.P6LogQuery;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.UUID;
 
 /**
  * <p>
@@ -25,30 +23,32 @@ import java.util.UUID;
  */
 @Service
 @Slf4j
-public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
+public class UserServiceImpl extends ServiceImpl<UserDao, User> implements IUserService {
 
     @Autowired
-    UserMapper userMapper;
+    UserDao userDao;
 
-   /* @Override
-    public boolean updateUserByPhone(String oldPhone, String newPhone) {
+    @Override
+    @Transactional
+    public boolean updateUserByPhone(String oldPhone,String newPhone) throws Exception {
         boolean debug = log.isDebugEnabled();
-        if (debug) {
+        if(debug){
             log.debug("用户输入的新旧手机号. args[oldPhone=[{}],newPhone=[{}]]", oldPhone, newPhone);
         }
-        try {
-            User userByPhone = userMapper.getUserByPhone(oldPhone);
+//        try {
+            User userByPhone = userDao.getUserByPhone(oldPhone);
+            System.out.println(userByPhone + "fdkfodksofkdsopf");
             if (userByPhone != null && !userByPhone.equals("")) {
-                log.info("根据手机号查询到用户信息. phone=[{}],user=[{}]" , oldPhone, JSON.toJSONString(userByPhone));
+                log.info("根据手机号查询到用户信息. phone=[{}],user=[{}]" , oldPhone,JSON.toJSONString(userByPhone));
                 userByPhone.setPhone(newPhone);
+                userDao.updateById(userByPhone);
             }
-            userMapper.updateById(userByPhone);
             return true;
-        }catch(Exception e){
-            log.error("用户更新手机号失败. phone=[{}]",oldPhone);
-            return false;
-        }
-    }*/
+//        }catch(Exception e){
+//            log.error("用户更新手机号失败. phone=[{}]",oldPhone);
+//            return false;
+//        }
+    }
 
 /*    @Override
     public boolean updateUserByName(String oldName, String newName) {
@@ -70,19 +70,19 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         }
     }*/
 
-//    @Override
-//    public List<User> getUserByEmail(String email) {
-//        return this.baseMapper.selectList(new QueryWrapper<User>()
-//                .lambda()
-//                .eq(User::getEmail, email));
-//    }
+    @Override
+    public List<User> getUserByEmail(String email) {
+        return this.baseMapper.selectList(new QueryWrapper<User>()
+                .lambda()
+                .eq(User::getEmail, email));
+    }
 
     @Override
     public List<User> getUserByLikeName(String name) {
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         queryWrapper.like("name", name);
         log.info("用户输入的模糊查询的内容:[{}]", name);
-        List<User> userList = userMapper.selectList(queryWrapper);
+        List<User> userList = userDao.selectList(queryWrapper);
         return userList;
     }
 
@@ -91,7 +91,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("name", name);
         log.info("用户输入要查询的人的姓名：[{}]",name);
-        List<User> userList = userMapper.selectList(queryWrapper);
+        List<User> userList = userDao.selectList(queryWrapper);
         return userList;
     }
 }

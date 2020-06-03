@@ -138,27 +138,26 @@ public class UserController implements IUserController{
 
 
 
-//	@Override
-//	@Log(description = "根据邮箱查询用户信息")
-//	public ResultBean<User> getUserByEmail(@NotBlank String email) {
-//		List<User> userByEmailList = userService.getUserByEmail(email);
-//		if (userByEmailList.size() >= 0) {
-//			return ResultBean.success(userByEmailList);
-//		} else {
-//			return ResultBean.error(111, "根据邮箱查询用户信息失败");
-//		}
-//	}
-/*
 	@Override
-	@Log(description = "更新手机号")
-	public ResultBean<Boolean> updateUserByPhone(@NotBlank @Pattern(regexp = "^[1][3,4,5,6,7,8,9][0-9]{9}$", message = "手机号码格式错误") String oldPhone, @NotBlank @Pattern(regexp = "^1(3|4|5|7|8)\\d{9}$", message = "手机号码格式错误") String newPhone) throws Exception {
-		boolean bool = userService.updateUserByPhone(oldPhone, newPhone);
-		if (bool) {
-			return ResultBean.success(bool);
+	@Log(description = "根据邮箱查询用户信息")
+	public ResultBean<User> getUserByEmail(@NotBlank String email) {
+		List<User> userByEmailList = userService.getUserByEmail(email);
+		if (userByEmailList.size() >= 0) {
+			return ResultBean.success(userByEmailList);
 		} else {
-			return ResultBean.error(111, "根据用户的手机号更新用户信息失败");
+			return ResultBean.error(111, "根据邮箱查询用户信息失败");
 		}
-	}*/
+	}
+	@Override
+	@Log(description = "根据用户的手机号更新用户信息")
+	public ResultBean<Boolean> updateUserByPhone(String oldPhone,String newPhone) throws Exception {
+		boolean b = userService.updateUserByPhone(oldPhone, newPhone);
+		if (b) {
+			return ResultBean.success(b) ;
+		}else {
+			return ResultBean.error(1111,"根据用户的手机号更新用户信息失败") ;
+		}
+	}
 
 
 

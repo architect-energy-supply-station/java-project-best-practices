@@ -65,54 +65,6 @@ class UserTest {
                 .forEach(System.out::println);
     }
 
-    @Test
-    void getId() {
-        User user = new User();
-        user.getId();
-    }
-
-    @Test
-    void getName() {
-    }
-
-    @Test
-    void getAge() {
-    }
-
-    @Test
-    void testGetEmail() {
-    }
-
-    @Test
-    void getPhone() {
-    }
-
-    @Test
-    void getEvaluation() {
-    }
-
-    @Test
-    void setId() {
-    }
-
-    @Test
-    void setName() {
-    }
-
-    @Test
-    void setAge() {
-    }
-
-    @Test
-    void testSetEmail() {
-    }
 
 
-    @Test
-    void setEvaluation() {
-    }
-
-    @Test
-    void setCreateTime() {
-    }
 }

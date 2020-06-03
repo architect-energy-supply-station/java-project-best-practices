@@ -18,13 +18,13 @@ public interface IUserService extends IService<User> {
 
     List<User> getUserByName(String name);
 
-//    boolean updateUserByPhone(String oldPhone, String newPhone);
+    //根据用户的手机号更新用户信息
+    boolean updateUserByPhone(String oldPhone,String newPhone) throws Exception;
 
-//    boolean updateUserByPhone(String oldPhone, String newPhone);
-//
+
 //    boolean updateUserByName(String oldName, String newName);
 //
-//    List<User> getUserByEmail(String email);
+    List<User> getUserByEmail(String email);
 //
-//    List<User> getUserByLikeName(String name);
+
 }

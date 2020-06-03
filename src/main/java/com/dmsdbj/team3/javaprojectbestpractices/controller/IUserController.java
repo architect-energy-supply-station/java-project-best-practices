@@ -73,13 +73,13 @@ public interface IUserController {
 //    @GetMapping(params = "name")
 //    ResultBean<User> getUserByLikeName(@ApiParam(value = "name", required = true) @NotBlank @RequestParam String name);
 
-//    @ApiOperation(value = "根据邮箱查询用户信息", notes = "请输入要查询的邮箱")
+    @ApiOperation(value = "根据邮箱查询用户信息", notes = "请输入要查询的邮箱")
 //    @GetMapping(params = "email")
-//    ResultBean<User> getUserByEmail(@ApiParam(value = "email", required = true) @NotBlank @RequestParam String email);
+    ResultBean<User> getUserByEmail(@ApiParam(value = "email", required = true) @NotBlank @RequestParam String email);
 
-//    @ApiOperation(value = "更新用户手机号", notes = "请输入用户的新旧手机号")
-//    @GetMapping("{oldPhone}/{newPhone}")
-//    ResultBean<Boolean> updateUserByPhone(@ApiParam(value = "oldPhone", required = true) @NotBlank @Pattern(regexp = "^[1][3,4,5,6,7,8,9][0-9]{9}$", message = "手机号码格式错误") @RequestParam("oldPhone") String oldPhone, @ApiParam(value = "newPhone", required = true) @NotBlank @Pattern(regexp = "^1(3|4|5|7|8)\\d{9}$", message = "手机号码格式错误") @RequestParam("newPhone") String newPhone) throws Exception;
+    @ApiOperation(value = "根据用户的手机号更新用户信息", notes = "请输入用户的新旧手机号")
+    @GetMapping("{oldPhone}/{newPhone}")
+    ResultBean<Boolean> updateUserByPhone(@ApiParam(value = "oldPhone", required = true) @NotBlank @Pattern(regexp = "^[1][3,4,5,6,7,8,9][0-9]{9}$", message = "手机号码格式错误") @RequestParam("oldPhone") String oldPhone,@ApiParam(value = "newPhone", required = true) @NotBlank @Pattern(regexp = "^1(3|4|5|7|8)\\d{9}$", message = "手机号码格式错误") @RequestParam("newPhone") String newPhone) throws Exception;
 
 
 
