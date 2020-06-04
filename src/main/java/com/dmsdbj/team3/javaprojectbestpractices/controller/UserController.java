@@ -3,19 +3,16 @@ package com.dmsdbj.team3.javaprojectbestpractices.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.dmsdbj.team3.javaprojectbestpractices.utils.aspect.Log;
 import com.dmsdbj.team3.javaprojectbestpractices.entity.User;
 import com.dmsdbj.team3.javaprojectbestpractices.service.IUserService;
+import com.dmsdbj.team3.javaprojectbestpractices.utils.aspect.Log;
 import com.dmsdbj.team3.javaprojectbestpractices.utils.exception.ResultBean;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RestController;
 
-import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 import java.util.List;
 
 /**
@@ -43,15 +40,15 @@ public class UserController implements IUserController{
 		return myEnglishName;
 	}
 
-//	@Override
-//	public ResultBean<Boolean> updateUserByName(String oldName, @NotBlank String newName) throws Exception {
-//		boolean bool = userService.updateUserByName(oldName, newName);
-//		if (bool) {
-//			return ResultBean.success(bool);
-//		} else {
-//			return ResultBean.error(111, "姓名更新失败");
-//		}
-//	}
+	@Override
+	public ResultBean<Boolean> updateUserByName(String oldName, @NotBlank String newName) throws Exception {
+		boolean bool = userService.updateUserByName(oldName, newName);
+		if (bool) {
+			return ResultBean.success(bool);
+		} else {
+			return ResultBean.error(111, "姓名更新失败");
+		}
+	}
 
 	@Override
 	@Log(description = "根据Id查询用户")

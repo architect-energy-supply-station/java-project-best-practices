@@ -22,7 +22,7 @@ public interface IUserService extends IService<User> {
     boolean updateUserByPhone(String oldPhone,String newPhone) throws Exception;
 
 
-//    boolean updateUserByName(String oldName, String newName);
+    boolean updateUserByName(String oldName, String newName);
 //
     List<User> getUserByEmail(String email);
 //

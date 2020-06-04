@@ -83,8 +83,8 @@ public interface IUserController {
 
 
 
-//    @ApiOperation(value = "更新用户名", notes = "请输入用户的新旧姓名")
-//    @GetMapping("{oldName}/{newName}")
-//    ResultBean<Boolean> updateUserByName(@ApiParam(value = "oldName", required = true) @RequestParam("oldName") String oldName, @NotBlank  @RequestParam("newName") String newName) throws Exception;
+    @ApiOperation(value = "更新用户名", notes = "请输入用户的新旧姓名")
+    @GetMapping("{oldName}/{newName}")
+    ResultBean<Boolean> updateUserByName(@ApiParam(value = "oldName", required = true) @RequestParam("oldName") String oldName, @NotBlank  @RequestParam("newName") String newName) throws Exception;
 
 }

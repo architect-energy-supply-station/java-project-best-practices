@@ -50,25 +50,25 @@ public class UserServiceImpl extends ServiceImpl<UserDao, User> implements IUser
 //        }
     }
 
-/*    @Override
+    @Override
     public boolean updateUserByName(String oldName, String newName) {
         boolean debug = log.isDebugEnabled();
         if (debug) {
             log.debug("用户输入的新旧姓名. args[oldName=[{}],newName=[{}]]", oldName, newName);
         }
-        try {
-            User userByName = userMapper.getUserByName(oldName);
+//        try {
+            User userByName = userDao.getUserByName(oldName);
             if (userByName != null && !userByName.equals("")) {
                 log.info("用户名查询到用户信息. name=[{}],user=[{}]" , oldName, JSON.toJSONString(userByName));
                 userByName.setName(newName);
             }
-            userMapper.updateById(userByName);
+            userDao.updateById(userByName);
             return true;
-        }catch(Exception e){
-            log.error("用户更新姓名失败. name=[{}]",oldName);
-            return false;
-        }
-    }*/
+//        }catch(Exception e){
+//            log.error("用户更新姓名失败. name=[{}]",oldName);
+//            return false;
+//        }
+    }
 
     @Override
     public List<User> getUserByEmail(String email) {

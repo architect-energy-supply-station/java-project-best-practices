@@ -20,6 +20,6 @@ public interface UserDao extends BaseMapper<User> {
     User getUserByPhone(String oldPhone);
 //    User getUserByPhone(String oldPhone);
 
-//    User getUserByName(String oldName);
+    User getUserByName(String oldName);
 
 }
